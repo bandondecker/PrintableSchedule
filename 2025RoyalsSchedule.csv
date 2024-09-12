@@ -1,0 +1,355 @@
+START DATE,START TIME,START TIME ET,SUBJECT,LOCATION,DESCRIPTION,END DATE,END DATE ET,END TIME,END TIME ET,REMINDER OFF,REMINDER ON,REMINDER DATE,REMINDER TIME,REMINDER TIME ET,SHOWTIMEAS FREE,SHOWTIMEAS BUSY
+02/23/24,02:05 PM,03:05 PM,Royals at Rangers,Surprise Stadium - Surprise,"Local Radio: KCSP 610",02/23/24,02/23/24,05:05 PM,06:05 PM,FALSE,TRUE,02/23/24,01:05 PM,02:05 PM,FREE,BUSY
+02/24/24,01:05 PM,03:05 PM,Rangers at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",02/24/24,02/24/24,04:05 PM,06:05 PM,FALSE,TRUE,02/24/24,12:05 PM,02:05 PM,FREE,BUSY
+02/25/24,02:10 PM,03:10 PM,Royals at Angels,Tempe Diablo Stadium - Tempe,"Local Radio: KCSP 610",02/25/24,02/25/24,05:10 PM,06:10 PM,FALSE,TRUE,02/25/24,01:10 PM,02:10 PM,FREE,BUSY
+02/26/24,01:05 PM,03:05 PM,Cubs at Royals,Surprise Stadium - Surprise,"Local Radio: KWOD 1660",02/26/24,02/26/24,04:05 PM,06:05 PM,FALSE,TRUE,02/26/24,12:05 PM,02:05 PM,FREE,BUSY
+02/27/24,01:05 PM,03:05 PM,Rockies at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",02/27/24,02/27/24,04:05 PM,06:05 PM,FALSE,TRUE,02/27/24,12:05 PM,02:05 PM,FREE,BUSY
+02/27/24,02:10 PM,03:10 PM,Royals at Padres,Peoria Stadium - Peoria,"",02/27/24,02/27/24,05:10 PM,06:10 PM,FALSE,TRUE,02/27/24,01:10 PM,02:10 PM,FREE,BUSY
+02/28/24,02:10 PM,03:10 PM,Royals at Mariners,Peoria Stadium - Peoria,"Local Radio: KWOD 1660",02/28/24,02/28/24,05:10 PM,06:10 PM,FALSE,TRUE,02/28/24,01:10 PM,02:10 PM,FREE,BUSY
+02/29/24,02:05 PM,03:05 PM,Royals at White Sox,Camelback Ranch - Glendale,"Local Radio: KWOD 1660",02/29/24,02/29/24,05:05 PM,06:05 PM,FALSE,TRUE,02/29/24,01:05 PM,02:05 PM,FREE,BUSY
+03/01/24,01:05 PM,03:05 PM,Athletics at Royals,Surprise Stadium - Surprise,"Local Radio: KCSP 610",03/01/24,03/01/24,04:05 PM,06:05 PM,FALSE,TRUE,03/01/24,12:05 PM,02:05 PM,FREE,BUSY
+03/02/24,02:05 PM,03:05 PM,Royals at Guardians,Goodyear Ballpark - Goodyear,"Local Radio: MLB.com",03/02/24,03/02/24,05:05 PM,06:05 PM,FALSE,TRUE,03/02/24,01:05 PM,02:05 PM,FREE,BUSY
+03/03/24,01:05 PM,03:05 PM,Reds at Royals,Surprise Stadium - Surprise,"Local Radio: KCSP 610",03/03/24,03/03/24,04:05 PM,06:05 PM,FALSE,TRUE,03/03/24,12:05 PM,02:05 PM,FREE,BUSY
+03/05/24,06:05 PM,08:05 PM,Cubs at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",03/05/24,03/05/24,09:05 PM,11:05 PM,FALSE,TRUE,03/05/24,05:05 PM,07:05 PM,FREE,BUSY
+03/06/24,01:05 PM,03:05 PM,Mariners at Royals,Surprise Stadium - Surprise,"Local Radio: KWOD 1660",03/06/24,03/06/24,04:05 PM,06:05 PM,FALSE,TRUE,03/06/24,12:05 PM,02:05 PM,FREE,BUSY
+03/08/24,02:05 PM,03:05 PM,Royals at Rangers,Surprise Stadium - Surprise,"Local Radio: KWOD 1660",03/08/24,03/08/24,05:05 PM,06:05 PM,FALSE,TRUE,03/08/24,01:05 PM,02:05 PM,FREE,BUSY
+03/09/24,01:05 PM,03:05 PM,D-backs at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",03/09/24,03/09/24,04:05 PM,06:05 PM,FALSE,TRUE,03/09/24,12:05 PM,02:05 PM,FREE,BUSY
+03/10/24,03:05 PM,04:05 PM,Royals at Athletics,Hohokam Stadium - Mesa,"Local Radio: KCSP 610",03/10/24,03/10/24,06:05 PM,07:05 PM,FALSE,TRUE,03/10/24,02:05 PM,03:05 PM,FREE,BUSY
+03/11/24,01:05 PM,04:05 PM,Giants at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",03/11/24,03/11/24,04:05 PM,07:05 PM,FALSE,TRUE,03/11/24,12:05 PM,03:05 PM,FREE,BUSY
+03/12/24,03:10 PM,04:10 PM,Royals at Rockies,Salt River Fields at Talking Stick - Scottsdale,"Local Radio: KWOD 1660",03/12/24,03/12/24,06:10 PM,07:10 PM,FALSE,TRUE,03/12/24,02:10 PM,03:10 PM,FREE,BUSY
+03/13/24,01:05 PM,04:05 PM,Angels at Royals,Surprise Stadium - Surprise,"Local TV: Bally Sports Kansas City ----- Local Radio: MLB.com",03/13/24,03/13/24,04:05 PM,07:05 PM,FALSE,TRUE,03/13/24,12:05 PM,03:05 PM,FREE,BUSY
+03/14/24,03:10 PM,04:10 PM,Royals at D-backs,Salt River Fields at Talking Stick - Scottsdale,"Local Radio: MLB.com",03/14/24,03/14/24,06:10 PM,07:10 PM,FALSE,TRUE,03/14/24,02:10 PM,03:10 PM,FREE,BUSY
+03/15/24,01:05 PM,04:05 PM,Guardians at Royals,Surprise Stadium - Surprise,"Local Radio: MLB.com",03/15/24,03/15/24,04:05 PM,07:05 PM,FALSE,TRUE,03/15/24,12:05 PM,03:05 PM,FREE,BUSY
+03/16/24,03:05 PM,04:05 PM,Royals at Cubs,Sloan Park - Mesa,"Local Radio: KWOD 1660",03/16/24,03/16/24,06:05 PM,07:05 PM,FALSE,TRUE,03/16/24,02:05 PM,03:05 PM,FREE,BUSY
+03/17/24,04:05 PM,07:05 PM,Brewers at Royals,Surprise Stadium - Surprise,"Local TV: Bally Sports Kansas City ----- Local Radio: MLB.com",03/17/24,03/17/24,07:05 PM,10:05 PM,FALSE,TRUE,03/17/24,03:05 PM,06:05 PM,FREE,BUSY
+03/19/24,09:05 PM,10:05 PM,Royals at Giants,Scottsdale Stadium - Scottsdale,"Local Radio: KWOD 1660",03/20/24,03/20/24,12:05 AM,01:05 AM,FALSE,TRUE,03/19/24,08:05 PM,09:05 PM,FREE,BUSY
+03/20/24,06:05 PM,09:05 PM,Angels at Royals,Surprise Stadium - Surprise,"Local TV: Bally Sports Kansas City ----- Local Radio: KWOD 1660",03/20/24,03/21/24,09:05 PM,12:05 AM,FALSE,TRUE,03/20/24,05:05 PM,08:05 PM,FREE,BUSY
+03/21/24,03:05 PM,04:05 PM,Royals at Guardians,Goodyear Ballpark - Goodyear,"",03/21/24,03/21/24,06:05 PM,07:05 PM,FALSE,TRUE,03/21/24,02:05 PM,03:05 PM,FREE,BUSY
+03/21/24,01:05 PM,04:05 PM,White Sox at Royals,Surprise Stadium - Surprise,"Local TV: Bally Sports Kansas City ----- Local Radio: MLB.com",03/21/24,03/21/24,04:05 PM,07:05 PM,FALSE,TRUE,03/21/24,12:05 PM,03:05 PM,FREE,BUSY
+03/22/24,03:10 PM,04:10 PM,Royals at Brewers,American Family Fields of Phoenix - Phoenix,"Local Radio: MLB.com",03/22/24,03/22/24,06:10 PM,07:10 PM,FALSE,TRUE,03/22/24,02:10 PM,03:10 PM,FREE,BUSY
+03/23/24,12:05 PM,03:05 PM,Rangers at Royals,Surprise Stadium - Surprise,"Local TV: Bally Sports Kansas City ----- Local Radio: KWOD 1660",03/23/24,03/23/24,03:05 PM,06:05 PM,FALSE,TRUE,03/23/24,11:05 AM,02:05 PM,FREE,BUSY
+03/25/24,06:05 PM,07:05 PM,Royals at Naturals,Arvest Ballpark - Springdale,"Local Radio: KCSP 610",03/25/24,03/25/24,09:05 PM,10:05 PM,FALSE,TRUE,03/25/24,05:05 PM,06:05 PM,FREE,BUSY
+03/28/24,03:10 PM,04:10 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",03/28/24,03/28/24,06:10 PM,07:10 PM,FALSE,TRUE,03/28/24,02:10 PM,03:10 PM,FREE,BUSY
+03/30/24,03:10 PM,04:10 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",03/30/24,03/30/24,06:10 PM,07:10 PM,FALSE,TRUE,03/30/24,02:10 PM,03:10 PM,FREE,BUSY
+03/31/24,01:10 PM,02:10 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",03/31/24,03/31/24,04:10 PM,05:10 PM,FALSE,TRUE,03/31/24,12:10 PM,01:10 PM,FREE,BUSY
+04/01/24,05:35 PM,06:35 PM,Royals at Orioles,Oriole Park at Camden Yards - Baltimore,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/01/24,04/01/24,08:35 PM,09:35 PM,FALSE,TRUE,04/01/24,04:35 PM,05:35 PM,FREE,BUSY
+04/02/24,05:35 PM,06:35 PM,Royals at Orioles,Oriole Park at Camden Yards - Baltimore,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/02/24,04/02/24,08:35 PM,09:35 PM,FALSE,TRUE,04/02/24,04:35 PM,05:35 PM,FREE,BUSY
+04/03/24,12:05 PM,01:05 PM,Royals at Orioles,Oriole Park at Camden Yards - Baltimore,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/03/24,04/03/24,03:05 PM,04:05 PM,FALSE,TRUE,04/03/24,11:05 AM,12:05 PM,FREE,BUSY
+04/04/24,06:40 PM,07:40 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",04/04/24,04/04/24,09:40 PM,10:40 PM,FALSE,TRUE,04/04/24,05:40 PM,06:40 PM,FREE,BUSY
+04/05/24,06:40 PM,07:40 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/05/24,04/05/24,09:40 PM,10:40 PM,FALSE,TRUE,04/05/24,05:40 PM,06:40 PM,FREE,BUSY
+04/06/24,06:10 PM,07:10 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/06/24,04/06/24,09:10 PM,10:10 PM,FALSE,TRUE,04/06/24,05:10 PM,06:10 PM,FREE,BUSY
+04/07/24,01:10 PM,02:10 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/07/24,04/07/24,04:10 PM,05:10 PM,FALSE,TRUE,04/07/24,12:10 PM,01:10 PM,FREE,BUSY
+04/09/24,06:40 PM,07:40 PM,Astros at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/09/24,04/09/24,09:40 PM,10:40 PM,FALSE,TRUE,04/09/24,05:40 PM,06:40 PM,FREE,BUSY
+04/10/24,06:40 PM,07:40 PM,Astros at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/10/24,04/10/24,09:40 PM,10:40 PM,FALSE,TRUE,04/10/24,05:40 PM,06:40 PM,FREE,BUSY
+04/11/24,01:10 PM,02:10 PM,Astros at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/11/24,04/11/24,04:10 PM,05:10 PM,FALSE,TRUE,04/11/24,12:10 PM,01:10 PM,FREE,BUSY
+04/12/24,06:10 PM,07:10 PM,Royals at Mets,Citi Field - Flushing,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/12/24,04/12/24,09:10 PM,10:10 PM,FALSE,TRUE,04/12/24,05:10 PM,06:10 PM,FREE,BUSY
+04/13/24,12:40 PM,01:40 PM,Royals at Mets,Citi Field - Flushing,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/13/24,04/13/24,03:40 PM,04:40 PM,FALSE,TRUE,04/13/24,11:40 AM,12:40 PM,FREE,BUSY
+04/14/24,12:40 PM,01:40 PM,Royals at Mets,Citi Field - Flushing,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/14/24,04/14/24,03:40 PM,04:40 PM,FALSE,TRUE,04/14/24,11:40 AM,12:40 PM,FREE,BUSY
+04/15/24,06:40 PM,07:40 PM,Royals at White Sox,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/15/24,04/15/24,09:40 PM,10:40 PM,FALSE,TRUE,04/15/24,05:40 PM,06:40 PM,FREE,BUSY
+04/17/24,01:10 PM,02:10 PM,Royals at White Sox,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/17/24,04/17/24,04:10 PM,05:10 PM,FALSE,TRUE,04/17/24,12:10 PM,01:10 PM,FREE,BUSY
+04/17/24,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/17/24,04/17/24,,,FALSE,TRUE,04/17/24,,,FREE,BUSY
+04/19/24,06:40 PM,07:40 PM,Orioles at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/19/24,04/19/24,09:40 PM,10:40 PM,FALSE,TRUE,04/19/24,05:40 PM,06:40 PM,FREE,BUSY
+04/20/24,06:10 PM,07:10 PM,Orioles at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",04/20/24,04/20/24,09:10 PM,10:10 PM,FALSE,TRUE,04/20/24,05:10 PM,06:10 PM,FREE,BUSY
+04/21/24,01:10 PM,02:10 PM,Orioles at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/21/24,04/21/24,04:10 PM,05:10 PM,FALSE,TRUE,04/21/24,12:10 PM,01:10 PM,FREE,BUSY
+04/22/24,06:40 PM,07:40 PM,Blue Jays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/22/24,04/22/24,09:40 PM,10:40 PM,FALSE,TRUE,04/22/24,05:40 PM,06:40 PM,FREE,BUSY
+04/23/24,06:40 PM,07:40 PM,Blue Jays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/23/24,04/23/24,09:40 PM,10:40 PM,FALSE,TRUE,04/23/24,05:40 PM,06:40 PM,FREE,BUSY
+04/24/24,06:40 PM,07:40 PM,Blue Jays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/24/24,04/24/24,09:40 PM,10:40 PM,FALSE,TRUE,04/24/24,05:40 PM,06:40 PM,FREE,BUSY
+04/25/24,01:10 PM,02:10 PM,Blue Jays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/25/24,04/25/24,04:10 PM,05:10 PM,FALSE,TRUE,04/25/24,12:10 PM,01:10 PM,FREE,BUSY
+04/26/24,12:10 PM,01:10 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",04/26/24,04/26/24,03:10 PM,04:10 PM,FALSE,TRUE,04/26/24,11:10 AM,12:10 PM,FREE,BUSY
+04/27/24,05:10 PM,06:10 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/27/24,04/27/24,08:10 PM,09:10 PM,FALSE,TRUE,04/27/24,04:10 PM,05:10 PM,FREE,BUSY
+04/28/24,12:40 PM,01:40 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/28/24,04/28/24,03:40 PM,04:40 PM,FALSE,TRUE,04/28/24,11:40 AM,12:40 PM,FREE,BUSY
+04/29/24,06:07 PM,07:07 PM,Royals at Blue Jays,Rogers Centre - Toronto,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/29/24,04/29/24,09:07 PM,10:07 PM,FALSE,TRUE,04/29/24,05:07 PM,06:07 PM,FREE,BUSY
+04/30/24,06:07 PM,07:07 PM,Royals at Blue Jays,Rogers Centre - Toronto,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",04/30/24,04/30/24,09:07 PM,10:07 PM,FALSE,TRUE,04/30/24,05:07 PM,06:07 PM,FREE,BUSY
+05/01/24,02:07 PM,03:07 PM,Royals at Blue Jays,Rogers Centre - Toronto,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/01/24,05/01/24,05:07 PM,06:07 PM,FALSE,TRUE,05/01/24,01:07 PM,02:07 PM,FREE,BUSY
+05/03/24,06:40 PM,07:40 PM,Rangers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/03/24,05/03/24,09:40 PM,10:40 PM,FALSE,TRUE,05/03/24,05:40 PM,06:40 PM,FREE,BUSY
+05/04/24,06:10 PM,07:10 PM,Rangers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/04/24,05/04/24,09:10 PM,10:10 PM,FALSE,TRUE,05/04/24,05:10 PM,06:10 PM,FREE,BUSY
+05/05/24,01:10 PM,02:10 PM,Rangers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/05/24,05/05/24,04:10 PM,05:10 PM,FALSE,TRUE,05/05/24,12:10 PM,01:10 PM,FREE,BUSY
+05/06/24,06:10 PM,07:10 PM,Brewers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/06/24,05/06/24,09:10 PM,10:10 PM,FALSE,TRUE,05/06/24,05:10 PM,06:10 PM,FREE,BUSY
+05/07/24,06:40 PM,07:40 PM,Brewers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/07/24,05/07/24,09:40 PM,10:40 PM,FALSE,TRUE,05/07/24,05:40 PM,06:40 PM,FREE,BUSY
+05/08/24,01:10 PM,02:10 PM,Brewers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/08/24,05/08/24,04:10 PM,05:10 PM,FALSE,TRUE,05/08/24,12:10 PM,01:10 PM,FREE,BUSY
+05/09/24,08:38 PM,09:38 PM,Royals at Angels,Angel Stadium - Anaheim,"Local TV: Bally Sports Kansas City- FS1 ----- Local Radio: KCSP 610",05/09/24,05/10/24,11:38 PM,12:38 AM,FALSE,TRUE,05/09/24,07:38 PM,08:38 PM,FREE,BUSY
+05/10/24,08:38 PM,09:38 PM,Royals at Angels,Angel Stadium - Anaheim,"Local TV: Apple TV+ ----- Local Radio: KCSP 610",05/10/24,05/11/24,11:38 PM,12:38 AM,FALSE,TRUE,05/10/24,07:38 PM,08:38 PM,FREE,BUSY
+05/11/24,08:38 PM,09:38 PM,Royals at Angels,Angel Stadium - Anaheim,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",05/11/24,05/12/24,11:38 PM,12:38 AM,FALSE,TRUE,05/11/24,07:38 PM,08:38 PM,FREE,BUSY
+05/12/24,03:07 PM,04:07 PM,Royals at Angels,Angel Stadium - Anaheim,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/12/24,05/12/24,06:07 PM,07:07 PM,FALSE,TRUE,05/12/24,02:07 PM,03:07 PM,FREE,BUSY
+05/13/24,08:40 PM,09:40 PM,Royals at Mariners,T-Mobile Park - Seattle,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/13/24,05/14/24,11:40 PM,12:40 AM,FALSE,TRUE,05/13/24,07:40 PM,08:40 PM,FREE,BUSY
+05/14/24,08:40 PM,09:40 PM,Royals at Mariners,T-Mobile Park - Seattle,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/14/24,05/15/24,11:40 PM,12:40 AM,FALSE,TRUE,05/14/24,07:40 PM,08:40 PM,FREE,BUSY
+05/15/24,03:10 PM,04:10 PM,Royals at Mariners,T-Mobile Park - Seattle,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/15/24,05/15/24,06:10 PM,07:10 PM,FALSE,TRUE,05/15/24,02:10 PM,03:10 PM,FREE,BUSY
+05/17/24,06:40 PM,07:40 PM,Athletics at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/17/24,05/17/24,09:40 PM,10:40 PM,FALSE,TRUE,05/17/24,05:40 PM,06:40 PM,FREE,BUSY
+05/18/24,06:10 PM,07:10 PM,Athletics at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/18/24,05/18/24,09:10 PM,10:10 PM,FALSE,TRUE,05/18/24,05:10 PM,06:10 PM,FREE,BUSY
+05/19/24,01:10 PM,02:10 PM,Athletics at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/19/24,05/19/24,04:10 PM,05:10 PM,FALSE,TRUE,05/19/24,12:10 PM,01:10 PM,FREE,BUSY
+05/20/24,06:40 PM,07:40 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- FS1 ----- Local Radio: KCSP 610",05/20/24,05/20/24,09:40 PM,10:40 PM,FALSE,TRUE,05/20/24,05:40 PM,06:40 PM,FREE,BUSY
+05/21/24,06:40 PM,07:40 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/21/24,05/21/24,09:40 PM,10:40 PM,FALSE,TRUE,05/21/24,05:40 PM,06:40 PM,FREE,BUSY
+05/22/24,01:10 PM,02:10 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/22/24,05/22/24,04:10 PM,05:10 PM,FALSE,TRUE,05/22/24,12:10 PM,01:10 PM,FREE,BUSY
+05/24/24,05:50 PM,06:50 PM,Royals at Rays,Tropicana Field - St. Petersburg,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/24/24,05/24/24,08:50 PM,09:50 PM,FALSE,TRUE,05/24/24,04:50 PM,05:50 PM,FREE,BUSY
+05/25/24,03:10 PM,04:10 PM,Royals at Rays,Tropicana Field - St. Petersburg,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",05/25/24,05/25/24,06:10 PM,07:10 PM,FALSE,TRUE,05/25/24,02:10 PM,03:10 PM,FREE,BUSY
+05/26/24,12:40 PM,01:40 PM,Royals at Rays,Tropicana Field - St. Petersburg,"Local TV: Bally Sports Kansas City- ESPN+ ----- Local Radio: KCSP 610",05/26/24,05/26/24,03:40 PM,04:40 PM,FALSE,TRUE,05/26/24,11:40 AM,12:40 PM,FREE,BUSY
+05/27/24,01:10 PM,02:10 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/27/24,05/27/24,04:10 PM,05:10 PM,FALSE,TRUE,05/27/24,12:10 PM,01:10 PM,FREE,BUSY
+05/28/24,06:40 PM,07:40 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/28/24,05/28/24,09:40 PM,10:40 PM,FALSE,TRUE,05/28/24,05:40 PM,06:40 PM,FREE,BUSY
+05/29/24,06:40 PM,07:40 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/29/24,05/29/24,09:40 PM,10:40 PM,FALSE,TRUE,05/29/24,05:40 PM,06:40 PM,FREE,BUSY
+05/30/24,12:10 PM,01:10 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/30/24,05/30/24,03:10 PM,04:10 PM,FALSE,TRUE,05/30/24,11:10 AM,12:10 PM,FREE,BUSY
+05/31/24,07:10 PM,08:10 PM,Padres at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",05/31/24,05/31/24,10:10 PM,11:10 PM,FALSE,TRUE,05/31/24,06:10 PM,07:10 PM,FREE,BUSY
+06/01/24,03:10 PM,04:10 PM,Padres at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/01/24,06/01/24,06:10 PM,07:10 PM,FALSE,TRUE,06/01/24,02:10 PM,03:10 PM,FREE,BUSY
+06/02/24,01:10 PM,02:10 PM,Padres at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/02/24,06/02/24,04:10 PM,05:10 PM,FALSE,TRUE,06/02/24,12:10 PM,01:10 PM,FREE,BUSY
+06/04/24,05:40 PM,06:40 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/04/24,06/04/24,08:40 PM,09:40 PM,FALSE,TRUE,06/04/24,04:40 PM,05:40 PM,FREE,BUSY
+06/06/24,12:10 PM,01:10 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: ESPN+- Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",06/06/24,06/06/24,03:10 PM,04:10 PM,FALSE,TRUE,06/06/24,11:10 AM,12:10 PM,FREE,BUSY
+06/07/24,07:10 PM,08:10 PM,Mariners at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/07/24,06/07/24,10:10 PM,11:10 PM,FALSE,TRUE,06/07/24,06:10 PM,07:10 PM,FREE,BUSY
+06/08/24,03:10 PM,04:10 PM,Mariners at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/08/24,06/08/24,06:10 PM,07:10 PM,FALSE,TRUE,06/08/24,02:10 PM,03:10 PM,FREE,BUSY
+06/09/24,01:10 PM,02:10 PM,Mariners at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/09/24,06/09/24,04:10 PM,05:10 PM,FALSE,TRUE,06/09/24,12:10 PM,01:10 PM,FREE,BUSY
+06/10/24,07:10 PM,08:10 PM,Yankees at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/10/24,06/10/24,10:10 PM,11:10 PM,FALSE,TRUE,06/10/24,06:10 PM,07:10 PM,FREE,BUSY
+06/11/24,07:10 PM,08:10 PM,Yankees at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/11/24,06/11/24,10:10 PM,11:10 PM,FALSE,TRUE,06/11/24,06:10 PM,07:10 PM,FREE,BUSY
+06/12/24,07:10 PM,08:10 PM,Yankees at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/12/24,06/12/24,10:10 PM,11:10 PM,FALSE,TRUE,06/12/24,06:10 PM,07:10 PM,FREE,BUSY
+06/13/24,01:10 PM,02:10 PM,Yankees at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",06/13/24,06/13/24,04:10 PM,05:10 PM,FALSE,TRUE,06/13/24,12:10 PM,01:10 PM,FREE,BUSY
+06/14/24,09:10 PM,10:10 PM,Royals at Dodgers,Dodger Stadium - Los Angeles,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/15/24,06/15/24,12:10 AM,01:10 AM,FALSE,TRUE,06/14/24,08:10 PM,09:10 PM,FREE,BUSY
+06/15/24,08:10 PM,09:10 PM,Royals at Dodgers,Dodger Stadium - Los Angeles,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/15/24,06/16/24,11:10 PM,12:10 AM,FALSE,TRUE,06/15/24,07:10 PM,08:10 PM,FREE,BUSY
+06/16/24,03:10 PM,04:10 PM,Royals at Dodgers,Dodger Stadium - Los Angeles,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",06/16/24,06/16/24,06:10 PM,07:10 PM,FALSE,TRUE,06/16/24,02:10 PM,03:10 PM,FREE,BUSY
+06/18/24,08:40 PM,09:40 PM,Royals at Athletics,Oakland Coliseum - Oakland,"Local TV: Bally Sports Kansas City- ESPN+- MLBN (out-of-market only) ----- Local Radio: KCSP 610",06/18/24,06/19/24,11:40 PM,12:40 AM,FALSE,TRUE,06/18/24,07:40 PM,08:40 PM,FREE,BUSY
+06/19/24,08:40 PM,09:40 PM,Royals at Athletics,Oakland Coliseum - Oakland,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/19/24,06/20/24,11:40 PM,12:40 AM,FALSE,TRUE,06/19/24,07:40 PM,08:40 PM,FREE,BUSY
+06/20/24,02:37 PM,03:37 PM,Royals at Athletics,Oakland Coliseum - Oakland,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/20/24,06/20/24,05:37 PM,06:37 PM,FALSE,TRUE,06/20/24,01:37 PM,02:37 PM,FREE,BUSY
+06/21/24,07:05 PM,08:05 PM,Royals at Rangers,Globe Life Field - Arlington,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/21/24,06/21/24,10:05 PM,11:05 PM,FALSE,TRUE,06/21/24,06:05 PM,07:05 PM,FREE,BUSY
+06/22/24,03:05 PM,04:05 PM,Royals at Rangers,Globe Life Field - Arlington,"Local TV: Bally Sports Kansas City- ESPN+- MLBN (out-of-market only) ----- Local Radio: KCSP 610",06/22/24,06/22/24,06:05 PM,07:05 PM,FALSE,TRUE,06/22/24,02:05 PM,03:05 PM,FREE,BUSY
+06/23/24,01:35 PM,02:35 PM,Royals at Rangers,Globe Life Field - Arlington,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/23/24,06/23/24,04:35 PM,05:35 PM,FALSE,TRUE,06/23/24,12:35 PM,01:35 PM,FREE,BUSY
+06/24/24,07:10 PM,08:10 PM,Marlins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/24/24,06/24/24,10:10 PM,11:10 PM,FALSE,TRUE,06/24/24,06:10 PM,07:10 PM,FREE,BUSY
+06/25/24,07:10 PM,08:10 PM,Marlins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/25/24,06/25/24,10:10 PM,11:10 PM,FALSE,TRUE,06/25/24,06:10 PM,07:10 PM,FREE,BUSY
+06/26/24,01:10 PM,02:10 PM,Marlins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/26/24,06/26/24,04:10 PM,05:10 PM,FALSE,TRUE,06/26/24,12:10 PM,01:10 PM,FREE,BUSY
+06/27/24,07:10 PM,08:10 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- FS1 ----- Local Radio: KCSP 610",06/27/24,06/27/24,10:10 PM,11:10 PM,FALSE,TRUE,06/27/24,06:10 PM,07:10 PM,FREE,BUSY
+06/28/24,07:10 PM,08:10 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/28/24,06/28/24,10:10 PM,11:10 PM,FALSE,TRUE,06/28/24,06:10 PM,07:10 PM,FREE,BUSY
+06/29/24,03:10 PM,04:10 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/29/24,06/29/24,06:10 PM,07:10 PM,FALSE,TRUE,06/29/24,02:10 PM,03:10 PM,FREE,BUSY
+06/30/24,01:10 PM,02:10 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",06/30/24,06/30/24,04:10 PM,05:10 PM,FALSE,TRUE,06/30/24,12:10 PM,01:10 PM,FREE,BUSY
+07/02/24,07:10 PM,08:10 PM,Rays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/02/24,07/02/24,10:10 PM,11:10 PM,FALSE,TRUE,07/02/24,06:10 PM,07:10 PM,FREE,BUSY
+07/03/24,07:10 PM,08:10 PM,Rays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/03/24,07/03/24,10:10 PM,11:10 PM,FALSE,TRUE,07/03/24,06:10 PM,07:10 PM,FREE,BUSY
+07/04/24,07:10 PM,08:10 PM,Rays at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/04/24,07/04/24,10:10 PM,11:10 PM,FALSE,TRUE,07/04/24,06:10 PM,07:10 PM,FREE,BUSY
+07/05/24,07:10 PM,08:10 PM,Royals at Rockies,Coors Field - Denver,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/05/24,07/05/24,10:10 PM,11:10 PM,FALSE,TRUE,07/05/24,06:10 PM,07:10 PM,FREE,BUSY
+07/06/24,08:10 PM,09:10 PM,Royals at Rockies,Coors Field - Denver,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/06/24,07/07/24,11:10 PM,12:10 AM,FALSE,TRUE,07/06/24,07:10 PM,08:10 PM,FREE,BUSY
+07/07/24,02:10 PM,03:10 PM,Royals at Rockies,Coors Field - Denver,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/07/24,07/07/24,05:10 PM,06:10 PM,FALSE,TRUE,07/07/24,01:10 PM,02:10 PM,FREE,BUSY
+07/10/24,12:45 PM,01:45 PM,Royals at Cardinals,Busch Stadium - St. Louis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/10/24,07/10/24,03:45 PM,04:45 PM,FALSE,TRUE,07/10/24,11:45 AM,12:45 PM,FREE,BUSY
+07/10/24,06:45 PM,07:45 PM,Royals at Cardinals,Busch Stadium - St. Louis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/10/24,07/10/24,09:45 PM,10:45 PM,FALSE,TRUE,07/10/24,05:45 PM,06:45 PM,FREE,BUSY
+07/12/24,06:10 PM,07:10 PM,Royals at Red Sox,Fenway Park - Boston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/12/24,07/12/24,09:10 PM,10:10 PM,FALSE,TRUE,07/12/24,05:10 PM,06:10 PM,FREE,BUSY
+07/13/24,03:10 PM,04:10 PM,Royals at Red Sox,Fenway Park - Boston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/13/24,07/13/24,06:10 PM,07:10 PM,FALSE,TRUE,07/13/24,02:10 PM,03:10 PM,FREE,BUSY
+07/14/24,12:35 PM,01:35 PM,Royals at Red Sox,Fenway Park - Boston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/14/24,07/14/24,03:35 PM,04:35 PM,FALSE,TRUE,07/14/24,11:35 AM,12:35 PM,FREE,BUSY
+07/19/24,07:10 PM,08:10 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/19/24,07/19/24,10:10 PM,11:10 PM,FALSE,TRUE,07/19/24,06:10 PM,07:10 PM,FREE,BUSY
+07/20/24,06:10 PM,07:10 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/20/24,07/20/24,09:10 PM,10:10 PM,FALSE,TRUE,07/20/24,05:10 PM,06:10 PM,FREE,BUSY
+07/21/24,01:10 PM,02:10 PM,White Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/21/24,07/21/24,04:10 PM,05:10 PM,FALSE,TRUE,07/21/24,12:10 PM,01:10 PM,FREE,BUSY
+07/22/24,07:10 PM,08:10 PM,D-backs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/22/24,07/22/24,10:10 PM,11:10 PM,FALSE,TRUE,07/22/24,06:10 PM,07:10 PM,FREE,BUSY
+07/23/24,07:10 PM,08:10 PM,D-backs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/23/24,07/23/24,10:10 PM,11:10 PM,FALSE,TRUE,07/23/24,06:10 PM,07:10 PM,FREE,BUSY
+07/24/24,07:10 PM,08:10 PM,D-backs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/24/24,07/24/24,10:10 PM,11:10 PM,FALSE,TRUE,07/24/24,06:10 PM,07:10 PM,FREE,BUSY
+07/26/24,07:10 PM,08:10 PM,Cubs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/26/24,07/26/24,10:10 PM,11:10 PM,FALSE,TRUE,07/26/24,06:10 PM,07:10 PM,FREE,BUSY
+07/27/24,06:10 PM,07:10 PM,Cubs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/27/24,07/27/24,09:10 PM,10:10 PM,FALSE,TRUE,07/27/24,05:10 PM,06:10 PM,FREE,BUSY
+07/28/24,01:10 PM,02:10 PM,Cubs at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/28/24,07/28/24,04:10 PM,05:10 PM,FALSE,TRUE,07/28/24,12:10 PM,01:10 PM,FREE,BUSY
+07/29/24,07:10 PM,08:10 PM,Royals at White Sox,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/29/24,07/29/24,10:10 PM,11:10 PM,FALSE,TRUE,07/29/24,06:10 PM,07:10 PM,FREE,BUSY
+07/30/24,07:10 PM,08:10 PM,Royals at White Sox,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/30/24,07/30/24,10:10 PM,11:10 PM,FALSE,TRUE,07/30/24,06:10 PM,07:10 PM,FREE,BUSY
+07/31/24,01:10 PM,02:10 PM,Royals at White Sox,Guaranteed Rate Field - Chicago,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",07/31/24,07/31/24,04:10 PM,05:10 PM,FALSE,TRUE,07/31/24,12:10 PM,01:10 PM,FREE,BUSY
+08/01/24,05:40 PM,06:40 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/01/24,08/01/24,08:40 PM,09:40 PM,FALSE,TRUE,08/01/24,04:40 PM,05:40 PM,FREE,BUSY
+08/02/24,05:40 PM,06:40 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Apple TV+ ----- Local Radio: KCSP 610",08/02/24,08/02/24,08:40 PM,09:40 PM,FALSE,TRUE,08/02/24,04:40 PM,05:40 PM,FREE,BUSY
+08/03/24,05:10 PM,06:10 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/03/24,08/03/24,08:10 PM,09:10 PM,FALSE,TRUE,08/03/24,04:10 PM,05:10 PM,FREE,BUSY
+08/04/24,12:40 PM,01:40 PM,Royals at Tigers,Comerica Park - Detroit,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/04/24,08/04/24,03:40 PM,04:40 PM,FALSE,TRUE,08/04/24,11:40 AM,12:40 PM,FREE,BUSY
+08/05/24,07:10 PM,08:10 PM,Red Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/05/24,08/05/24,10:10 PM,11:10 PM,FALSE,TRUE,08/05/24,06:10 PM,07:10 PM,FREE,BUSY
+08/06/24,07:10 PM,08:10 PM,Red Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/06/24,08/06/24,10:10 PM,11:10 PM,FALSE,TRUE,08/06/24,06:10 PM,07:10 PM,FREE,BUSY
+08/07/24,07:10 PM,08:10 PM,Red Sox at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/07/24,08/07/24,10:10 PM,11:10 PM,FALSE,TRUE,08/07/24,06:10 PM,07:10 PM,FREE,BUSY
+08/09/24,07:10 PM,08:10 PM,Cardinals at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/09/24,08/09/24,10:10 PM,11:10 PM,FALSE,TRUE,08/09/24,06:10 PM,07:10 PM,FREE,BUSY
+08/10/24,06:10 PM,07:10 PM,Cardinals at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/10/24,08/10/24,09:10 PM,10:10 PM,FALSE,TRUE,08/10/24,05:10 PM,06:10 PM,FREE,BUSY
+08/12/24,06:40 PM,07:40 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/12/24,08/12/24,09:40 PM,10:40 PM,FALSE,TRUE,08/12/24,05:40 PM,06:40 PM,FREE,BUSY
+08/13/24,06:40 PM,07:40 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/13/24,08/13/24,09:40 PM,10:40 PM,FALSE,TRUE,08/13/24,05:40 PM,06:40 PM,FREE,BUSY
+08/14/24,12:10 PM,01:10 PM,Royals at Twins,Target Field - Minneapolis,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",08/14/24,08/14/24,03:10 PM,04:10 PM,FALSE,TRUE,08/14/24,11:10 AM,12:10 PM,FREE,BUSY
+08/16/24,05:40 PM,06:40 PM,Royals at Reds,Great American Ball Park - Cincinnati,"Local TV: Bally Sports Kansas City- ESPN+ ----- Local Radio: KCSP 610",08/16/24,08/16/24,08:40 PM,09:40 PM,FALSE,TRUE,08/16/24,04:40 PM,05:40 PM,FREE,BUSY
+08/17/24,05:40 PM,06:40 PM,Royals at Reds,Great American Ball Park - Cincinnati,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/17/24,08/17/24,08:40 PM,09:40 PM,FALSE,TRUE,08/17/24,04:40 PM,05:40 PM,FREE,BUSY
+08/18/24,12:40 PM,01:40 PM,Royals at Reds,Great American Ball Park - Cincinnati,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",08/18/24,08/18/24,03:40 PM,04:40 PM,FALSE,TRUE,08/18/24,11:40 AM,12:40 PM,FREE,BUSY
+08/19/24,07:10 PM,08:10 PM,Angels at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/19/24,08/19/24,10:10 PM,11:10 PM,FALSE,TRUE,08/19/24,06:10 PM,07:10 PM,FREE,BUSY
+08/20/24,07:10 PM,08:10 PM,Angels at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/20/24,08/20/24,10:10 PM,11:10 PM,FALSE,TRUE,08/20/24,06:10 PM,07:10 PM,FREE,BUSY
+08/21/24,07:10 PM,08:10 PM,Angels at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/21/24,08/21/24,10:10 PM,11:10 PM,FALSE,TRUE,08/21/24,06:10 PM,07:10 PM,FREE,BUSY
+08/23/24,07:10 PM,08:10 PM,Phillies at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/23/24,08/23/24,10:10 PM,11:10 PM,FALSE,TRUE,08/23/24,06:10 PM,07:10 PM,FREE,BUSY
+08/24/24,06:10 PM,07:10 PM,Phillies at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",08/24/24,08/24/24,09:10 PM,10:10 PM,FALSE,TRUE,08/24/24,05:10 PM,06:10 PM,FREE,BUSY
+08/25/24,01:10 PM,02:10 PM,Phillies at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- ESPN+ ----- Local Radio: KCSP 610",08/25/24,08/25/24,04:10 PM,05:10 PM,FALSE,TRUE,08/25/24,12:10 PM,01:10 PM,FREE,BUSY
+08/26/24,12:10 PM,01:10 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",08/26/24,08/26/24,03:10 PM,04:10 PM,FALSE,TRUE,08/26/24,11:10 AM,12:10 PM,FREE,BUSY
+08/26/24,05:40 PM,06:40 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/26/24,08/26/24,08:40 PM,09:40 PM,FALSE,TRUE,08/26/24,04:40 PM,05:40 PM,FREE,BUSY
+08/27/24,05:40 PM,06:40 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/27/24,08/27/24,08:40 PM,09:40 PM,FALSE,TRUE,08/27/24,04:40 PM,05:40 PM,FREE,BUSY
+08/28/24,12:10 PM,01:10 PM,Royals at Guardians,Progressive Field - Cleveland,"Local TV: Bally Sports Kansas City- MLBN (out-of-market only) ----- Local Radio: KCSP 610",08/28/24,08/28/24,03:10 PM,04:10 PM,FALSE,TRUE,08/28/24,11:10 AM,12:10 PM,FREE,BUSY
+08/29/24,07:10 PM,08:10 PM,Royals at Astros,Minute Maid Park - Houston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/29/24,08/29/24,10:10 PM,11:10 PM,FALSE,TRUE,08/29/24,06:10 PM,07:10 PM,FREE,BUSY
+08/30/24,07:10 PM,08:10 PM,Royals at Astros,Minute Maid Park - Houston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/30/24,08/30/24,10:10 PM,11:10 PM,FALSE,TRUE,08/30/24,06:10 PM,07:10 PM,FREE,BUSY
+08/31/24,06:10 PM,07:10 PM,Royals at Astros,Minute Maid Park - Houston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",08/31/24,08/31/24,09:10 PM,10:10 PM,FALSE,TRUE,08/31/24,05:10 PM,06:10 PM,FREE,BUSY
+09/01/24,01:10 PM,02:10 PM,Royals at Astros,Minute Maid Park - Houston,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/01/24,09/01/24,04:10 PM,05:10 PM,FALSE,TRUE,09/01/24,12:10 PM,01:10 PM,FREE,BUSY
+09/02/24,03:10 PM,04:10 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/02/24,09/02/24,06:10 PM,07:10 PM,FALSE,TRUE,09/02/24,02:10 PM,03:10 PM,FREE,BUSY
+09/03/24,06:40 PM,07:40 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/03/24,09/03/24,09:40 PM,10:40 PM,FALSE,TRUE,09/03/24,05:40 PM,06:40 PM,FREE,BUSY
+09/04/24,06:40 PM,07:40 PM,Guardians at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City- FS1 ----- Local Radio: KCSP 610",09/04/24,09/04/24,09:40 PM,10:40 PM,FALSE,TRUE,09/04/24,05:40 PM,06:40 PM,FREE,BUSY
+09/06/24,07:10 PM,08:10 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: Apple TV+ ----- Local Radio: KCSP 610",09/06/24,09/06/24,10:10 PM,11:10 PM,FALSE,TRUE,09/06/24,06:10 PM,07:10 PM,FREE,BUSY
+09/07/24,06:15 PM,07:15 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: FOX ----- Local Radio: KCSP 610",09/07/24,09/07/24,09:15 PM,10:15 PM,FALSE,TRUE,09/07/24,05:15 PM,06:15 PM,FREE,BUSY
+09/08/24,01:10 PM,02:10 PM,Twins at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/08/24,09/08/24,04:10 PM,05:10 PM,FALSE,TRUE,09/08/24,12:10 PM,01:10 PM,FREE,BUSY
+09/09/24,06:05 PM,07:05 PM,Royals at Yankees,Yankee Stadium - Bronx,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/09/24,09/09/24,09:05 PM,10:05 PM,FALSE,TRUE,09/09/24,05:05 PM,06:05 PM,FREE,BUSY
+09/10/24,06:05 PM,07:05 PM,Royals at Yankees,Yankee Stadium - Bronx,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/10/24,09/10/24,09:05 PM,10:05 PM,FALSE,TRUE,09/10/24,05:05 PM,06:05 PM,FREE,BUSY
+09/11/24,06:05 PM,07:05 PM,Royals at Yankees,Yankee Stadium - Bronx,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/11/24,09/11/24,09:05 PM,10:05 PM,FALSE,TRUE,09/11/24,05:05 PM,06:05 PM,FREE,BUSY
+09/13/24,05:40 PM,06:40 PM,Royals at Pirates,PNC Park - Pittsburgh,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/13/24,09/13/24,08:40 PM,09:40 PM,FALSE,TRUE,09/13/24,04:40 PM,05:40 PM,FREE,BUSY
+09/14/24,12:05 PM,01:05 PM,Royals at Pirates,PNC Park - Pittsburgh,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/14/24,09/14/24,03:05 PM,04:05 PM,FALSE,TRUE,09/14/24,11:05 AM,12:05 PM,FREE,BUSY
+09/15/24,12:35 PM,01:35 PM,Royals at Pirates,PNC Park - Pittsburgh,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/15/24,09/15/24,03:35 PM,04:35 PM,FALSE,TRUE,09/15/24,11:35 AM,12:35 PM,FREE,BUSY
+09/16/24,06:40 PM,07:40 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/16/24,09/16/24,09:40 PM,10:40 PM,FALSE,TRUE,09/16/24,05:40 PM,06:40 PM,FREE,BUSY
+09/17/24,06:40 PM,07:40 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/17/24,09/17/24,09:40 PM,10:40 PM,FALSE,TRUE,09/17/24,05:40 PM,06:40 PM,FREE,BUSY
+09/18/24,06:40 PM,07:40 PM,Tigers at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/18/24,09/18/24,09:40 PM,10:40 PM,FALSE,TRUE,09/18/24,05:40 PM,06:40 PM,FREE,BUSY
+09/20/24,07:10 PM,08:10 PM,Giants at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/20/24,09/20/24,10:10 PM,11:10 PM,FALSE,TRUE,09/20/24,06:10 PM,07:10 PM,FREE,BUSY
+09/21/24,06:10 PM,07:10 PM,Giants at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/21/24,09/21/24,09:10 PM,10:10 PM,FALSE,TRUE,09/21/24,05:10 PM,06:10 PM,FREE,BUSY
+09/22/24,01:10 PM,02:10 PM,Giants at Royals,Kauffman Stadium - Kansas City,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/22/24,09/22/24,04:10 PM,05:10 PM,FALSE,TRUE,09/22/24,12:10 PM,01:10 PM,FREE,BUSY
+09/24/24,05:45 PM,06:45 PM,Royals at Nationals,Nationals Park - Washington,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/24/24,09/24/24,08:45 PM,09:45 PM,FALSE,TRUE,09/24/24,04:45 PM,05:45 PM,FREE,BUSY
+09/25/24,05:45 PM,06:45 PM,Royals at Nationals,Nationals Park - Washington,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/25/24,09/25/24,08:45 PM,09:45 PM,FALSE,TRUE,09/25/24,04:45 PM,05:45 PM,FREE,BUSY
+09/26/24,12:05 PM,01:05 PM,Royals at Nationals,Nationals Park - Washington,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/26/24,09/26/24,03:05 PM,04:05 PM,FALSE,TRUE,09/26/24,11:05 AM,12:05 PM,FREE,BUSY
+09/27/24,06:20 PM,07:20 PM,Royals at Braves,Truist Park - Atlanta,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/27/24,09/27/24,09:20 PM,10:20 PM,FALSE,TRUE,09/27/24,05:20 PM,06:20 PM,FREE,BUSY
+09/28/24,06:20 PM,07:20 PM,Royals at Braves,Truist Park - Atlanta,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/28/24,09/28/24,09:20 PM,10:20 PM,FALSE,TRUE,09/28/24,05:20 PM,06:20 PM,FREE,BUSY
+09/29/24,02:20 PM,03:20 PM,Royals at Braves,Truist Park - Atlanta,"Local TV: Bally Sports Kansas City ----- Local Radio: KCSP 610",09/29/24,09/29/24,05:20 PM,06:20 PM,FALSE,TRUE,09/29/24,01:20 PM,02:20 PM,FREE,BUSY
+03/27/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",03/27/25,03/27/25,,,FALSE,TRUE,03/27/25,,,FREE,BUSY
+03/29/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",03/29/25,03/29/25,,,FALSE,TRUE,03/29/25,,,FREE,BUSY
+03/30/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",03/30/25,03/30/25,,,FALSE,TRUE,03/30/25,,,FREE,BUSY
+03/31/25,,,Royals at Brewers - Time TBD,American Family Field - Milwaukee,"",03/31/25,03/31/25,,,FALSE,TRUE,03/31/25,,,FREE,BUSY
+04/01/25,,,Royals at Brewers - Time TBD,American Family Field - Milwaukee,"",04/01/25,04/01/25,,,FALSE,TRUE,04/01/25,,,FREE,BUSY
+04/02/25,,,Royals at Brewers - Time TBD,American Family Field - Milwaukee,"",04/02/25,04/02/25,,,FALSE,TRUE,04/02/25,,,FREE,BUSY
+04/04/25,,,Orioles at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/04/25,04/04/25,,,FALSE,TRUE,04/04/25,,,FREE,BUSY
+04/05/25,,,Orioles at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/05/25,04/05/25,,,FALSE,TRUE,04/05/25,,,FREE,BUSY
+04/06/25,,,Orioles at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/06/25,04/06/25,,,FALSE,TRUE,04/06/25,,,FREE,BUSY
+04/07/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/07/25,04/07/25,,,FALSE,TRUE,04/07/25,,,FREE,BUSY
+04/08/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/08/25,04/08/25,,,FALSE,TRUE,04/08/25,,,FREE,BUSY
+04/09/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/09/25,04/09/25,,,FALSE,TRUE,04/09/25,,,FREE,BUSY
+04/10/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/10/25,04/10/25,,,FALSE,TRUE,04/10/25,,,FREE,BUSY
+04/11/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",04/11/25,04/11/25,,,FALSE,TRUE,04/11/25,,,FREE,BUSY
+04/12/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",04/12/25,04/12/25,,,FALSE,TRUE,04/12/25,,,FREE,BUSY
+04/13/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",04/13/25,04/13/25,,,FALSE,TRUE,04/13/25,,,FREE,BUSY
+04/14/25,,,Royals at Yankees - Time TBD,Yankee Stadium - Bronx,"",04/14/25,04/14/25,,,FALSE,TRUE,04/14/25,,,FREE,BUSY
+04/15/25,,,Royals at Yankees - Time TBD,Yankee Stadium - Bronx,"",04/15/25,04/15/25,,,FALSE,TRUE,04/15/25,,,FREE,BUSY
+04/16/25,,,Royals at Yankees - Time TBD,Yankee Stadium - Bronx,"",04/16/25,04/16/25,,,FALSE,TRUE,04/16/25,,,FREE,BUSY
+04/17/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",04/17/25,04/17/25,,,FALSE,TRUE,04/17/25,,,FREE,BUSY
+04/18/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",04/18/25,04/18/25,,,FALSE,TRUE,04/18/25,,,FREE,BUSY
+04/19/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",04/19/25,04/19/25,,,FALSE,TRUE,04/19/25,,,FREE,BUSY
+04/20/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",04/20/25,04/20/25,,,FALSE,TRUE,04/20/25,,,FREE,BUSY
+04/22/25,,,Rockies at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/22/25,04/22/25,,,FALSE,TRUE,04/22/25,,,FREE,BUSY
+04/23/25,,,Rockies at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/23/25,04/23/25,,,FALSE,TRUE,04/23/25,,,FREE,BUSY
+04/24/25,,,Rockies at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/24/25,04/24/25,,,FALSE,TRUE,04/24/25,,,FREE,BUSY
+04/25/25,,,Astros at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/25/25,04/25/25,,,FALSE,TRUE,04/25/25,,,FREE,BUSY
+04/26/25,,,Astros at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/26/25,04/26/25,,,FALSE,TRUE,04/26/25,,,FREE,BUSY
+04/27/25,,,Astros at Royals - Time TBD,Kauffman Stadium - Kansas City,"",04/27/25,04/27/25,,,FALSE,TRUE,04/27/25,,,FREE,BUSY
+04/29/25,,,Royals at Rays - Time TBD,Tropicana Field - St. Petersburg,"",04/29/25,04/29/25,,,FALSE,TRUE,04/29/25,,,FREE,BUSY
+04/30/25,,,Royals at Rays - Time TBD,Tropicana Field - St. Petersburg,"",04/30/25,04/30/25,,,FALSE,TRUE,04/30/25,,,FREE,BUSY
+05/01/25,,,Royals at Rays - Time TBD,Tropicana Field - St. Petersburg,"",05/01/25,05/01/25,,,FALSE,TRUE,05/01/25,,,FREE,BUSY
+05/02/25,,,Royals at Orioles - Time TBD,Oriole Park at Camden Yards - Baltimore,"",05/02/25,05/02/25,,,FALSE,TRUE,05/02/25,,,FREE,BUSY
+05/03/25,,,Royals at Orioles - Time TBD,Oriole Park at Camden Yards - Baltimore,"",05/03/25,05/03/25,,,FALSE,TRUE,05/03/25,,,FREE,BUSY
+05/04/25,,,Royals at Orioles - Time TBD,Oriole Park at Camden Yards - Baltimore,"",05/04/25,05/04/25,,,FALSE,TRUE,05/04/25,,,FREE,BUSY
+05/05/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/05/25,05/05/25,,,FALSE,TRUE,05/05/25,,,FREE,BUSY
+05/06/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/06/25,05/06/25,,,FALSE,TRUE,05/06/25,,,FREE,BUSY
+05/07/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/07/25,05/07/25,,,FALSE,TRUE,05/07/25,,,FREE,BUSY
+05/08/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/08/25,05/08/25,,,FALSE,TRUE,05/08/25,,,FREE,BUSY
+05/09/25,,,Red Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/09/25,05/09/25,,,FALSE,TRUE,05/09/25,,,FREE,BUSY
+05/10/25,,,Red Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/10/25,05/10/25,,,FALSE,TRUE,05/10/25,,,FREE,BUSY
+05/11/25,,,Red Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/11/25,05/11/25,,,FALSE,TRUE,05/11/25,,,FREE,BUSY
+05/12/25,,,Royals at Astros - Time TBD,Minute Maid Park - Houston,"",05/12/25,05/12/25,,,FALSE,TRUE,05/12/25,,,FREE,BUSY
+05/13/25,,,Royals at Astros - Time TBD,Minute Maid Park - Houston,"",05/13/25,05/13/25,,,FALSE,TRUE,05/13/25,,,FREE,BUSY
+05/14/25,,,Royals at Astros - Time TBD,Minute Maid Park - Houston,"",05/14/25,05/14/25,,,FALSE,TRUE,05/14/25,,,FREE,BUSY
+05/16/25,,,Cardinals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/16/25,05/16/25,,,FALSE,TRUE,05/16/25,,,FREE,BUSY
+05/17/25,,,Cardinals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/17/25,05/17/25,,,FALSE,TRUE,05/17/25,,,FREE,BUSY
+05/18/25,,,Cardinals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/18/25,05/18/25,,,FALSE,TRUE,05/18/25,,,FREE,BUSY
+05/19/25,,,Royals at Giants - Time TBD,Oracle Park - San Francisco,"",05/19/25,05/19/25,,,FALSE,TRUE,05/19/25,,,FREE,BUSY
+05/20/25,,,Royals at Giants - Time TBD,Oracle Park - San Francisco,"",05/20/25,05/20/25,,,FALSE,TRUE,05/20/25,,,FREE,BUSY
+05/21/25,,,Royals at Giants - Time TBD,Oracle Park - San Francisco,"",05/21/25,05/21/25,,,FALSE,TRUE,05/21/25,,,FREE,BUSY
+05/23/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",05/23/25,05/23/25,,,FALSE,TRUE,05/23/25,,,FREE,BUSY
+05/24/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",05/24/25,05/24/25,,,FALSE,TRUE,05/24/25,,,FREE,BUSY
+05/25/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",05/25/25,05/25/25,,,FALSE,TRUE,05/25/25,,,FREE,BUSY
+05/26/25,,,Reds at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/26/25,05/26/25,,,FALSE,TRUE,05/26/25,,,FREE,BUSY
+05/27/25,,,Reds at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/27/25,05/27/25,,,FALSE,TRUE,05/27/25,,,FREE,BUSY
+05/28/25,,,Reds at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/28/25,05/28/25,,,FALSE,TRUE,05/28/25,,,FREE,BUSY
+05/30/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/30/25,05/30/25,,,FALSE,TRUE,05/30/25,,,FREE,BUSY
+05/31/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",05/31/25,05/31/25,,,FALSE,TRUE,05/31/25,,,FREE,BUSY
+06/01/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/01/25,06/01/25,,,FALSE,TRUE,06/01/25,,,FREE,BUSY
+06/03/25,,,Royals at Cardinals - Time TBD,Busch Stadium - St. Louis,"",06/03/25,06/03/25,,,FALSE,TRUE,06/03/25,,,FREE,BUSY
+06/04/25,,,Royals at Cardinals - Time TBD,Busch Stadium - St. Louis,"",06/04/25,06/04/25,,,FALSE,TRUE,06/04/25,,,FREE,BUSY
+06/05/25,,,Royals at Cardinals - Time TBD,Busch Stadium - St. Louis,"",06/05/25,06/05/25,,,FALSE,TRUE,06/05/25,,,FREE,BUSY
+06/06/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",06/06/25,06/06/25,,,FALSE,TRUE,06/06/25,,,FREE,BUSY
+06/07/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",06/07/25,06/07/25,,,FALSE,TRUE,06/07/25,,,FREE,BUSY
+06/08/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",06/08/25,06/08/25,,,FALSE,TRUE,06/08/25,,,FREE,BUSY
+06/10/25,,,Yankees at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/10/25,06/10/25,,,FALSE,TRUE,06/10/25,,,FREE,BUSY
+06/11/25,,,Yankees at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/11/25,06/11/25,,,FALSE,TRUE,06/11/25,,,FREE,BUSY
+06/12/25,,,Yankees at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/12/25,06/12/25,,,FALSE,TRUE,06/12/25,,,FREE,BUSY
+06/13/25,,,Athletics at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/13/25,06/13/25,,,FALSE,TRUE,06/13/25,,,FREE,BUSY
+06/14/25,,,Athletics at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/14/25,06/14/25,,,FALSE,TRUE,06/14/25,,,FREE,BUSY
+06/15/25,,,Athletics at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/15/25,06/15/25,,,FALSE,TRUE,06/15/25,,,FREE,BUSY
+06/17/25,,,Royals at Rangers - Time TBD,Globe Life Field - Arlington,"",06/17/25,06/17/25,,,FALSE,TRUE,06/17/25,,,FREE,BUSY
+06/18/25,,,Royals at Rangers - Time TBD,Globe Life Field - Arlington,"",06/18/25,06/18/25,,,FALSE,TRUE,06/18/25,,,FREE,BUSY
+06/19/25,,,Royals at Rangers - Time TBD,Globe Life Field - Arlington,"",06/19/25,06/19/25,,,FALSE,TRUE,06/19/25,,,FREE,BUSY
+06/20/25,,,Royals at Padres - Time TBD,Petco Park - San Diego,"",06/20/25,06/20/25,,,FALSE,TRUE,06/20/25,,,FREE,BUSY
+06/21/25,,,Royals at Padres - Time TBD,Petco Park - San Diego,"",06/21/25,06/21/25,,,FALSE,TRUE,06/21/25,,,FREE,BUSY
+06/22/25,,,Royals at Padres - Time TBD,Petco Park - San Diego,"",06/22/25,06/22/25,,,FALSE,TRUE,06/22/25,,,FREE,BUSY
+06/24/25,,,Rays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/24/25,06/24/25,,,FALSE,TRUE,06/24/25,,,FREE,BUSY
+06/25/25,,,Rays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/25/25,06/25/25,,,FALSE,TRUE,06/25/25,,,FREE,BUSY
+06/26/25,,,Rays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/26/25,06/26/25,,,FALSE,TRUE,06/26/25,,,FREE,BUSY
+06/27/25,,,Dodgers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/27/25,06/27/25,,,FALSE,TRUE,06/27/25,,,FREE,BUSY
+06/28/25,,,Dodgers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/28/25,06/28/25,,,FALSE,TRUE,06/28/25,,,FREE,BUSY
+06/29/25,,,Dodgers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",06/29/25,06/29/25,,,FALSE,TRUE,06/29/25,,,FREE,BUSY
+06/30/25,,,Royals at Mariners - Time TBD,T-Mobile Park - Seattle,"",06/30/25,06/30/25,,,FALSE,TRUE,06/30/25,,,FREE,BUSY
+07/01/25,,,Royals at Mariners - Time TBD,T-Mobile Park - Seattle,"",07/01/25,07/01/25,,,FALSE,TRUE,07/01/25,,,FREE,BUSY
+07/02/25,,,Royals at Mariners - Time TBD,T-Mobile Park - Seattle,"",07/02/25,07/02/25,,,FALSE,TRUE,07/02/25,,,FREE,BUSY
+07/03/25,,,Royals at Mariners - Time TBD,T-Mobile Park - Seattle,"",07/03/25,07/03/25,,,FALSE,TRUE,07/03/25,,,FREE,BUSY
+07/04/25,,,Royals at D-backs - Time TBD,Chase Field - Phoenix,"",07/04/25,07/04/25,,,FALSE,TRUE,07/04/25,,,FREE,BUSY
+07/05/25,,,Royals at D-backs - Time TBD,Chase Field - Phoenix,"",07/05/25,07/05/25,,,FALSE,TRUE,07/05/25,,,FREE,BUSY
+07/06/25,,,Royals at D-backs - Time TBD,Chase Field - Phoenix,"",07/06/25,07/06/25,,,FALSE,TRUE,07/06/25,,,FREE,BUSY
+07/07/25,,,Pirates at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/07/25,07/07/25,,,FALSE,TRUE,07/07/25,,,FREE,BUSY
+07/08/25,,,Pirates at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/08/25,07/08/25,,,FALSE,TRUE,07/08/25,,,FREE,BUSY
+07/09/25,,,Pirates at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/09/25,07/09/25,,,FALSE,TRUE,07/09/25,,,FREE,BUSY
+07/11/25,,,Mets at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/11/25,07/11/25,,,FALSE,TRUE,07/11/25,,,FREE,BUSY
+07/12/25,,,Mets at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/12/25,07/12/25,,,FALSE,TRUE,07/12/25,,,FREE,BUSY
+07/13/25,,,Mets at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/13/25,07/13/25,,,FALSE,TRUE,07/13/25,,,FREE,BUSY
+07/18/25,,,Royals at Marlins - Time TBD,loanDepot park - Miami,"",07/18/25,07/18/25,,,FALSE,TRUE,07/18/25,,,FREE,BUSY
+07/19/25,,,Royals at Marlins - Time TBD,loanDepot park - Miami,"",07/19/25,07/19/25,,,FALSE,TRUE,07/19/25,,,FREE,BUSY
+07/20/25,,,Royals at Marlins - Time TBD,loanDepot park - Miami,"",07/20/25,07/20/25,,,FALSE,TRUE,07/20/25,,,FREE,BUSY
+07/21/25,,,Royals at Cubs - Time TBD,Wrigley Field - Chicago,"",07/21/25,07/21/25,,,FALSE,TRUE,07/21/25,,,FREE,BUSY
+07/22/25,,,Royals at Cubs - Time TBD,Wrigley Field - Chicago,"",07/22/25,07/22/25,,,FALSE,TRUE,07/22/25,,,FREE,BUSY
+07/23/25,,,Royals at Cubs - Time TBD,Wrigley Field - Chicago,"",07/23/25,07/23/25,,,FALSE,TRUE,07/23/25,,,FREE,BUSY
+07/25/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/25/25,07/25/25,,,FALSE,TRUE,07/25/25,,,FREE,BUSY
+07/26/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/26/25,07/26/25,,,FALSE,TRUE,07/26/25,,,FREE,BUSY
+07/27/25,,,Guardians at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/27/25,07/27/25,,,FALSE,TRUE,07/27/25,,,FREE,BUSY
+07/28/25,,,Braves at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/28/25,07/28/25,,,FALSE,TRUE,07/28/25,,,FREE,BUSY
+07/29/25,,,Braves at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/29/25,07/29/25,,,FALSE,TRUE,07/29/25,,,FREE,BUSY
+07/30/25,,,Braves at Royals - Time TBD,Kauffman Stadium - Kansas City,"",07/30/25,07/30/25,,,FALSE,TRUE,07/30/25,,,FREE,BUSY
+08/01/25,,,Royals at Blue Jays - Time TBD,Rogers Centre - Toronto,"",08/01/25,08/01/25,,,FALSE,TRUE,08/01/25,,,FREE,BUSY
+08/02/25,,,Royals at Blue Jays - Time TBD,Rogers Centre - Toronto,"",08/02/25,08/02/25,,,FALSE,TRUE,08/02/25,,,FREE,BUSY
+08/03/25,,,Royals at Blue Jays - Time TBD,Rogers Centre - Toronto,"",08/03/25,08/03/25,,,FALSE,TRUE,08/03/25,,,FREE,BUSY
+08/04/25,,,Royals at Red Sox - Time TBD,Fenway Park - Boston,"",08/04/25,08/04/25,,,FALSE,TRUE,08/04/25,,,FREE,BUSY
+08/05/25,,,Royals at Red Sox - Time TBD,Fenway Park - Boston,"",08/05/25,08/05/25,,,FALSE,TRUE,08/05/25,,,FREE,BUSY
+08/06/25,,,Royals at Red Sox - Time TBD,Fenway Park - Boston,"",08/06/25,08/06/25,,,FALSE,TRUE,08/06/25,,,FREE,BUSY
+08/08/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",08/08/25,08/08/25,,,FALSE,TRUE,08/08/25,,,FREE,BUSY
+08/09/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",08/09/25,08/09/25,,,FALSE,TRUE,08/09/25,,,FREE,BUSY
+08/10/25,,,Royals at Twins - Time TBD,Target Field - Minneapolis,"",08/10/25,08/10/25,,,FALSE,TRUE,08/10/25,,,FREE,BUSY
+08/11/25,,,Nationals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/11/25,08/11/25,,,FALSE,TRUE,08/11/25,,,FREE,BUSY
+08/12/25,,,Nationals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/12/25,08/12/25,,,FALSE,TRUE,08/12/25,,,FREE,BUSY
+08/13/25,,,Nationals at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/13/25,08/13/25,,,FALSE,TRUE,08/13/25,,,FREE,BUSY
+08/15/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/15/25,08/15/25,,,FALSE,TRUE,08/15/25,,,FREE,BUSY
+08/16/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/16/25,08/16/25,,,FALSE,TRUE,08/16/25,,,FREE,BUSY
+08/17/25,,,White Sox at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/17/25,08/17/25,,,FALSE,TRUE,08/17/25,,,FREE,BUSY
+08/18/25,,,Rangers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/18/25,08/18/25,,,FALSE,TRUE,08/18/25,,,FREE,BUSY
+08/19/25,,,Rangers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/19/25,08/19/25,,,FALSE,TRUE,08/19/25,,,FREE,BUSY
+08/20/25,,,Rangers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/20/25,08/20/25,,,FALSE,TRUE,08/20/25,,,FREE,BUSY
+08/21/25,,,Rangers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/21/25,08/21/25,,,FALSE,TRUE,08/21/25,,,FREE,BUSY
+08/22/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",08/22/25,08/22/25,,,FALSE,TRUE,08/22/25,,,FREE,BUSY
+08/23/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",08/23/25,08/23/25,,,FALSE,TRUE,08/23/25,,,FREE,BUSY
+08/24/25,,,Royals at Tigers - Time TBD,Comerica Park - Detroit,"",08/24/25,08/24/25,,,FALSE,TRUE,08/24/25,,,FREE,BUSY
+08/25/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",08/25/25,08/25/25,,,FALSE,TRUE,08/25/25,,,FREE,BUSY
+08/26/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",08/26/25,08/26/25,,,FALSE,TRUE,08/26/25,,,FREE,BUSY
+08/27/25,,,Royals at White Sox - Time TBD,Guaranteed Rate Field - Chicago,"",08/27/25,08/27/25,,,FALSE,TRUE,08/27/25,,,FREE,BUSY
+08/29/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/29/25,08/29/25,,,FALSE,TRUE,08/29/25,,,FREE,BUSY
+08/30/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/30/25,08/30/25,,,FALSE,TRUE,08/30/25,,,FREE,BUSY
+08/31/25,,,Tigers at Royals - Time TBD,Kauffman Stadium - Kansas City,"",08/31/25,08/31/25,,,FALSE,TRUE,08/31/25,,,FREE,BUSY
+09/02/25,,,Angels at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/02/25,09/02/25,,,FALSE,TRUE,09/02/25,,,FREE,BUSY
+09/03/25,,,Angels at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/03/25,09/03/25,,,FALSE,TRUE,09/03/25,,,FREE,BUSY
+09/04/25,,,Angels at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/04/25,09/04/25,,,FALSE,TRUE,09/04/25,,,FREE,BUSY
+09/05/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/05/25,09/05/25,,,FALSE,TRUE,09/05/25,,,FREE,BUSY
+09/06/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/06/25,09/06/25,,,FALSE,TRUE,09/06/25,,,FREE,BUSY
+09/07/25,,,Twins at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/07/25,09/07/25,,,FALSE,TRUE,09/07/25,,,FREE,BUSY
+09/08/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",09/08/25,09/08/25,,,FALSE,TRUE,09/08/25,,,FREE,BUSY
+09/09/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",09/09/25,09/09/25,,,FALSE,TRUE,09/09/25,,,FREE,BUSY
+09/10/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",09/10/25,09/10/25,,,FALSE,TRUE,09/10/25,,,FREE,BUSY
+09/11/25,,,Royals at Guardians - Time TBD,Progressive Field - Cleveland,"",09/11/25,09/11/25,,,FALSE,TRUE,09/11/25,,,FREE,BUSY
+09/12/25,,,Royals at Phillies - Time TBD,Citizens Bank Park - Philadelphia,"",09/12/25,09/12/25,,,FALSE,TRUE,09/12/25,,,FREE,BUSY
+09/13/25,,,Royals at Phillies - Time TBD,Citizens Bank Park - Philadelphia,"",09/13/25,09/13/25,,,FALSE,TRUE,09/13/25,,,FREE,BUSY
+09/14/25,,,Royals at Phillies - Time TBD,Citizens Bank Park - Philadelphia,"",09/14/25,09/14/25,,,FALSE,TRUE,09/14/25,,,FREE,BUSY
+09/16/25,,,Mariners at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/16/25,09/16/25,,,FALSE,TRUE,09/16/25,,,FREE,BUSY
+09/17/25,,,Mariners at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/17/25,09/17/25,,,FALSE,TRUE,09/17/25,,,FREE,BUSY
+09/18/25,,,Mariners at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/18/25,09/18/25,,,FALSE,TRUE,09/18/25,,,FREE,BUSY
+09/19/25,,,Blue Jays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/19/25,09/19/25,,,FALSE,TRUE,09/19/25,,,FREE,BUSY
+09/20/25,,,Blue Jays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/20/25,09/20/25,,,FALSE,TRUE,09/20/25,,,FREE,BUSY
+09/21/25,,,Blue Jays at Royals - Time TBD,Kauffman Stadium - Kansas City,"",09/21/25,09/21/25,,,FALSE,TRUE,09/21/25,,,FREE,BUSY
+09/23/25,,,Royals at Angels - Time TBD,Angel Stadium - Anaheim,"",09/23/25,09/23/25,,,FALSE,TRUE,09/23/25,,,FREE,BUSY
+09/24/25,,,Royals at Angels - Time TBD,Angel Stadium - Anaheim,"",09/24/25,09/24/25,,,FALSE,TRUE,09/24/25,,,FREE,BUSY
+09/25/25,,,Royals at Angels - Time TBD,Angel Stadium - Anaheim,"",09/25/25,09/25/25,,,FALSE,TRUE,09/25/25,,,FREE,BUSY
+09/26/25,,,Royals at Athletics - Time TBD,Sutter Health Park - Sacramento,"",09/26/25,09/26/25,,,FALSE,TRUE,09/26/25,,,FREE,BUSY
+09/27/25,,,Royals at Athletics - Time TBD,Sutter Health Park - Sacramento,"",09/27/25,09/27/25,,,FALSE,TRUE,09/27/25,,,FREE,BUSY
+09/28/25,,,Royals at Athletics - Time TBD,Sutter Health Park - Sacramento,"",09/28/25,09/28/25,,,FALSE,TRUE,09/28/25,,,FREE,BUSY
