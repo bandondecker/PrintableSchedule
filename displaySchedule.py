@@ -122,7 +122,7 @@ current_month = 3
 ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+4*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
 
 for month_ordinal in months.keys():
-    ax.text(month_anchors[month_ordinal][0]+cell_width*3.5, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
+    ax.text(month_anchors[month_ordinal][0]+cell_width*3, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
     for day in weekdays.keys():
         ax.text(month_anchors[month_ordinal][0] + (day - weekstart)%7*cell_width, month_anchors[month_ordinal][1]+0.25*cell_height, weekdays[day].upper(), color=otc, fontsize=dfs, horizontalalignment='center', verticalalignment='center')
 
