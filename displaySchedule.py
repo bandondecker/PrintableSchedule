@@ -2,7 +2,7 @@ from astropy.io import ascii
 from astropy.table import Table, Column, Row
 import datetime
 import json
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
 # =============================================================================
 # USER VARIABLES
@@ -22,10 +22,18 @@ otc = 'xkcd:navy blue' # Off Day Text Colour
 
 tbc = 'xkcd:goldenrod' # Ticket Box Colour
 
-# gfs = 6 # Game font size
-fh = 8.5 * 1.2 # Figure height
-fw = 7 * 8.5/5 * 1.2 # Figure width
-gfs = fh / 1.25 # Game font size
+# Scaling parameters
+rows = 2
+columns = 3
+
+fh = 8.5 # Ideal figure height
+fw = 11 # Ideal figure width
+rescale = 1.2 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
+
+v_margin = 0.5 # Vertical Margin
+h_margin = 0.5 # Horizontal Margin
+
+gfs = fh / 1.2 # Game font size
 dfs = 0.5*gfs # Date font size
 mfs = 2*gfs # Month font size
 
@@ -105,26 +113,30 @@ weekdays = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:
 
 
 fig = plt.figure()
-fig.set_size_inches(h=fh, w=fw)
+fig.set_size_inches(h=fh*rescale, w=fw*rescale)
 ax = fig.add_subplot(111)
 ax.set_aspect('equal')
-ax.set_axis_off()
+#ax.set_axis_off()
 
-cell_height = 2
-cell_width = 3
+#cell_height = 2
+#cell_width = 3
+# Set the cell height and width based off the figure size
+
+cell_width = (fw - 2*h_margin) / 22.0
+cell_height = (cell_width * 2) / 3.0
 
 column = 0
-row = 1
+row = cell_height
 
-month_anchors = {3: [0, 0], 4: [0, -1*cell_height], 5: [0, -9*cell_height], 6: [8*cell_width, 0], 7: [8*cell_width, -9*cell_height], 8: [16*cell_width, 0], 9: [16*cell_width, -9*cell_height]}
+month_anchors = {3: [0, 0], 4: [0, -1*cell_height], 5: [0, -8.5*cell_height], 6: [7.5*cell_width, 0], 7: [7.5*cell_width, -8.5*cell_height], 8: [15*cell_width, 0], 9: [15*cell_width, -8.5*cell_height]}
 current_month = 3
 
-ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+4*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
+ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+3*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
 
 for month_ordinal in months.keys():
-    ax.text(month_anchors[month_ordinal][0]+cell_width*3, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
+    ax.text(month_anchors[month_ordinal][0]+cell_width*3.5, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
     for day in weekdays.keys():
-        ax.text(month_anchors[month_ordinal][0] + (day - weekstart)%7*cell_width, month_anchors[month_ordinal][1]+0.25*cell_height, weekdays[day].upper(), color=otc, fontsize=dfs, horizontalalignment='center', verticalalignment='center')
+        ax.text(month_anchors[month_ordinal][0] + (day - weekstart)%7*cell_width + 0.5*cell_width, month_anchors[month_ordinal][1]+0.25*cell_height, weekdays[day].upper(), color=otc, fontsize=dfs, horizontalalignment='center', verticalalignment='center')
 
 ascii_sched.sort('ordinal_date') # It should already be, but just in case
 
@@ -156,7 +168,8 @@ for entry in ascii_sched.iterrows():
         starttime = ''
         
         if entry[2] == 'ALL-STAR GAME':
-            opp = 'ALL-STAR BREAK'
+            #opp = 'ALL-STAR BREAK'
+            opp = 'ASG'
         else:
             opp = ''
     
@@ -168,14 +181,14 @@ for entry in ascii_sched.iterrows():
         zo = 2
     
     if date.month != current_month:
-        row = 1
+        row = cell_height
         current_month = date.month
     
-    if week_ordinal == 0:
+    elif week_ordinal == 0: # The elif is to stop it catching when the month starts on the first day of the week
         row += cell_height
     
-    x_centre = month_anchors[date.month][0] + week_ordinal*cell_width
-    y_centre = month_anchors[date.month][1] - row
+    x_centre = month_anchors[date.month][0] + week_ordinal * cell_width + 0.5*cell_width
+    y_centre = month_anchors[date.month][1] - row + 0.5*cell_height
     
     ax.plot([x_centre-cell_width/2.0, x_centre-cell_width/2.0], [y_centre-cell_height/2.0, y_centre+cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
     ax.plot([x_centre+cell_width/2.0, x_centre+cell_width/2.0], [y_centre-cell_height/2.0, y_centre+cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
