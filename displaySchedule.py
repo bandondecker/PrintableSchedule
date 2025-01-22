@@ -29,13 +29,13 @@ gfs = fh / 1.25 # Game font size
 dfs = 0.5*gfs # Date font size
 mfs = 2*gfs # Month font size
 
-weekstart = 6 # Week starts on Sunday == 6, Monday == 0
+weekstart = 6 # Week starts on Sunday = 6, Monday = 0
 
 # =============================================================================
 # Read in and format text file
 # =============================================================================
 fn = '2025RoyalsSchedule.csv'
-start = 192
+start = 33
 asg = '15/07/2025'
 
 highlights = open('2025_tickets.txt').readlines()
@@ -57,7 +57,7 @@ def reformatMLBSchedule(fn, team, asg, start, highlights=None):
         
         if len(sched_date) == 1:
             sched_date = sched_date[0]
-            if not sched_date['START TIME'].mask:
+            if sched_date['START TIME'].dtype != float:
                 gamedatetime = datetime.datetime.strptime(sched_date['START DATE'] + ' ' + sched_date['START TIME'], '%m/%d/%y %I:%M %p')
             else:
                 gamedatetime = datetime.datetime.strptime(sched_date['START DATE'], '%m/%d/%y')
@@ -93,7 +93,7 @@ def reformatMLBSchedule(fn, team, asg, start, highlights=None):
 # SET IMPORTANT DATES AND LOAD ABBREVIATIONS
 # =============================================================================
 
-ascii_sched = reformatMLBSchedule('2025RoyalsSchedule.csv', 'Royals', '15/07/2025', 192, highlights=highlights)
+ascii_sched = reformatMLBSchedule('2025RoyalsSchedule.csv', 'Royals', '15/07/2025', start, highlights=highlights)
 
 nickname_to_abbreviation_dict = json.load(open('nickname_to_abbreviation_traditional.json'))
 
@@ -136,15 +136,24 @@ for entry in ascii_sched.iterrows():
         fillcolour = hfc
         textcolour = htc
         opp = nickname_to_abbreviation_dict[entry[2]]
+        if entry[4] != '00:00':
+            starttime = entry[4]
+        else:
+            starttime = ''
         
     elif entry[3] == 'A':
         fillcolour = afc
         textcolour = atc
         opp = nickname_to_abbreviation_dict[entry[2]]
+        if entry[4] != '00:00':
+            starttime = entry[4]
+        else:
+            starttime = ''
         
     else:
         fillcolour = ofc
         textcolour = otc
+        starttime = ''
         
         if entry[2] == 'ALL-STAR GAME':
             opp = 'ALL-STAR BREAK'
@@ -177,6 +186,7 @@ for entry in ascii_sched.iterrows():
     
     ax.text(x_centre-cell_width/2.0+cell_width*0.06, y_centre+cell_height/2.0-cell_height*0.1, date.day, color=textcolour, fontsize=dfs, verticalalignment='top')
     ax.text(x_centre, y_centre, opp, fontsize=gfs, color=textcolour, fontweight='bold', horizontalalignment='center', verticalalignment='center')
+    ax.text(x_centre, y_centre-cell_height/4.0, starttime, fontsize=dfs, color=textcolour, fontweight='bold', horizontalalignment='center', verticalalignment='center')
 
 home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-7*cell_height]
 away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-7*cell_height]
