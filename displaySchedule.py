@@ -20,20 +20,24 @@ atc = 'xkcd:white' # Away Text Colour
 ofc = 'xkcd:light grey' # Off Day Fill Colour
 otc = 'xkcd:navy blue' # Off Day Text Colour
 
+asg_fill = 'xkcd:scarlet' # ASG font colour
+asg_font = 'xkcd:navy blue' # ASG fill colour
+asg_location = 'Atlanta'
+
 tbc = 'xkcd:goldenrod' # Ticket Box Colour
 
 # Scaling parameters
 rows = 2
 columns = 3
 
-fh = 8.5 # Ideal figure height
-fw = 11 # Ideal figure width
+fh = 5 # Ideal figure height
+fw = 7 # Ideal figure width
 rescale = 1.2 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
 
-v_margin = 0.5 # Vertical Margin
-h_margin = 0.5 # Horizontal Margin
+v_margin = 0.1 # Vertical Margin
+h_margin = 0.1 # Horizontal Margin
 
-gfs = fh / 1.2 # Game font size
+gfs = fh # Game font size
 dfs = 0.5*gfs # Date font size
 mfs = 2*gfs # Month font size
 
@@ -115,24 +119,36 @@ weekdays = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:
 fig = plt.figure()
 fig.set_size_inches(h=fh*rescale, w=fw*rescale)
 ax = fig.add_subplot(111)
+ax.set_xlim(0, fw)
+ax.set_ylim(-fh, 0)
 ax.set_aspect('equal')
-#ax.set_axis_off()
+ax.set_axis_off()
 
 #cell_height = 2
 #cell_width = 3
 # Set the cell height and width based off the figure size
 
 cell_width = (fw - 2*h_margin) / 22.0
-cell_height = (cell_width * 2) / 3.0
+cell_height = (cell_width * 2) / 2.5 #3.0
+
+spare_height = fh - (cell_height * 13)
+
+header_add = spare_height*0.3
+month_add = spare_height*0.3
+legend_add = spare_height*0.4
+
+# Header
+#ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+3*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
+ax.text(fw*0.5, -v_margin, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='top', fontweight='bold')
 
 column = 0
 row = cell_height
 
-month_anchors = {3: [0, 0], 4: [0, -1*cell_height], 5: [0, -8.5*cell_height], 6: [7.5*cell_width, 0], 7: [7.5*cell_width, -8.5*cell_height], 8: [15*cell_width, 0], 9: [15*cell_width, -8.5*cell_height]}
+#month_anchors = {3: [0, 0], 4: [0, -1*cell_height], 5: [0, -8.5*cell_height], 6: [7.5*cell_width, 0], 7: [7.5*cell_width, -8.5*cell_height], 8: [15*cell_width, 0], 9: [15*cell_width, -8.5*cell_height]}
+month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height], 5: [h_margin, v_margin - header_add - month_add*2 - 6*cell_height], 6: [h_margin+7.5*cell_width, v_margin - header_add - month_add], 7: [h_margin+7.5*cell_width, v_margin - header_add - month_add*2 - 6*cell_height], 8: [h_margin+15*cell_width, v_margin - header_add - month_add], 9: [h_margin+15*cell_width, v_margin - header_add - month_add*2 - 6*cell_height]}
+
 current_month = 3
-
-ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+3*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
-
+# Month and week headers
 for month_ordinal in months.keys():
     ax.text(month_anchors[month_ordinal][0]+cell_width*3.5, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
     for day in weekdays.keys():
@@ -161,17 +177,19 @@ for entry in ascii_sched.iterrows():
             starttime = entry[4]
         else:
             starttime = ''
+            
+    elif entry[2] == 'ALL-STAR GAME':
+        fillcolour = asg_fill
+        textcolour = asg_font
+        starttime = asg_location.upper()
+        #opp = 'ALL-STAR BREAK'
+        opp = 'ASG'
         
     else:
         fillcolour = ofc
         textcolour = otc
         starttime = ''
-        
-        if entry[2] == 'ALL-STAR GAME':
-            #opp = 'ALL-STAR BREAK'
-            opp = 'ASG'
-        else:
-            opp = ''
+        opp = ''
     
     if entry[5] == True:
         ec = tbc
@@ -187,22 +205,34 @@ for entry in ascii_sched.iterrows():
     elif week_ordinal == 0: # The elif is to stop it catching when the month starts on the first day of the week
         row += cell_height
     
+    # Define the cell centre based on the day of the month
+    # The month anchor is always the top left corner of the first IDEAL cell
+    #     That is, the first cell that COULD BE present in the month, not necessarily the actual first
     x_centre = month_anchors[date.month][0] + week_ordinal * cell_width + 0.5*cell_width
     y_centre = month_anchors[date.month][1] - row + 0.5*cell_height
     
+    # Plot the cell normal cell border
     ax.plot([x_centre-cell_width/2.0, x_centre-cell_width/2.0], [y_centre-cell_height/2.0, y_centre+cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
     ax.plot([x_centre+cell_width/2.0, x_centre+cell_width/2.0], [y_centre-cell_height/2.0, y_centre+cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
     ax.plot([x_centre-cell_width/2.0, x_centre+cell_width/2.0], [y_centre-cell_height/2.0, y_centre-cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
     ax.plot([x_centre-cell_width/2.0, x_centre+cell_width/2.0], [y_centre+cell_height/2.0, y_centre+cell_height/2.0], c=ec, lw=gfs/6, zorder=zo)
     
+    # Fill the cell with the appropriate colour
     ax.fill((x_centre-cell_width/2.0, x_centre-cell_width/2.0, x_centre+cell_width/2.0, x_centre+cell_width/2.0, x_centre-cell_width/2.0), (y_centre-cell_height/2.0, y_centre+cell_height/2.0, y_centre+cell_height/2.0, y_centre-cell_height/2.0, y_centre-cell_height/2.0), fillcolour)
     
+    # Cell text
+    # Date (upper left)
     ax.text(x_centre-cell_width/2.0+cell_width*0.06, y_centre+cell_height/2.0-cell_height*0.1, date.day, color=textcolour, fontsize=dfs, verticalalignment='top')
+    # Opponent (centred, bold)
     ax.text(x_centre, y_centre, opp, fontsize=gfs, color=textcolour, fontweight='bold', horizontalalignment='center', verticalalignment='center')
-    ax.text(x_centre, y_centre-cell_height/4.0, starttime, fontsize=dfs, color=textcolour, fontweight='bold', horizontalalignment='center', verticalalignment='center')
+    # Start time (lower centre) (lower is here set at 20% of the cell's height)
+    ax.text(x_centre, y_centre-(cell_height*(0.5 - 0.2)), starttime, fontsize=dfs, color=textcolour, fontweight='bold', horizontalalignment='center', verticalalignment='center')
 
-home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-7*cell_height]
-away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-7*cell_height]
+# Legend boxes
+# home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-7*cell_height]
+# away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-7*cell_height]
+home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-5*cell_height - legend_add*0.5]
+away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-5*cell_height - legend_add*0.5]
 
 ax.fill((home_legend_loc[0]-cell_width/2.0, home_legend_loc[0]-cell_width/2.0, home_legend_loc[0]+cell_width/2.0, home_legend_loc[0]+cell_width/2.0, home_legend_loc[0]-cell_width/2.0), (home_legend_loc[1]-cell_height/2.0, home_legend_loc[1]+cell_height/2.0, home_legend_loc[1]+cell_height/2.0, home_legend_loc[1]-cell_height/2.0, home_legend_loc[1]-cell_height/2.0), hfc)
 ax.text(home_legend_loc[0]+0.75*cell_width, home_legend_loc[1], 'HOME', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
@@ -210,6 +240,8 @@ ax.text(home_legend_loc[0]+0.75*cell_width, home_legend_loc[1], 'HOME', color=ot
 ax.fill((away_legend_loc[0]-cell_width/2.0, away_legend_loc[0]-cell_width/2.0, away_legend_loc[0]+cell_width/2.0, away_legend_loc[0]+cell_width/2.0, away_legend_loc[0]-cell_width/2.0), (away_legend_loc[1]-cell_height/2.0, away_legend_loc[1]+cell_height/2.0, away_legend_loc[1]+cell_height/2.0, away_legend_loc[1]-cell_height/2.0, away_legend_loc[1]-cell_height/2.0), afc)
 ax.text(away_legend_loc[0]+0.75*cell_width, away_legend_loc[1], 'AWAY', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
 
-ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-8*cell_height, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='center')
+# Time Zone Note
+# ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-8*cell_height, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='center')
+ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-5*cell_height - legend_add, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='bottom')
 
 fig.savefig(f'{year}_{team}_Schedule.pdf', bbox_inches='tight', pad_inches=0.1)
