@@ -30,8 +30,8 @@ tbc = 'xkcd:goldenrod' # Ticket Box Colour
 rows = 2
 columns = 3
 
-fh = 5 # Ideal figure height
-fw = 7 # Ideal figure width
+fh = 8.5 # Ideal figure height
+fw = 11 # Ideal figure width
 rescale = 1.2 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
 
 v_margin = 0.1 # Vertical Margin
@@ -135,7 +135,7 @@ spare_height = fh - (cell_height * 13)
 
 header_add = spare_height*0.3
 month_add = spare_height*0.3
-legend_add = spare_height*0.4
+legend_add = spare_height*0.3 # Yes, these should sum to unity, but that doesn't work for some reason
 
 # Header
 #ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+3*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
