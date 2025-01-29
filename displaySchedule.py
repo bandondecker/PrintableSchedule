@@ -27,21 +27,39 @@ asg_location = 'Atlanta'
 tbc = 'xkcd:goldenrod' # Ticket Box Colour
 
 # Scaling parameters
-rows = 2
-columns = 3
+rows = 3
+columns = 2
 
-fh = 8.5 # Ideal figure height
-fw = 11 # Ideal figure width
-rescale = 1.2 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
+fh = 11 # Ideal figure height
+fw = 8.5 # Ideal figure width
+rescale = 1.25 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
 
 v_margin = 0.1 # Vertical Margin
 h_margin = 0.1 # Horizontal Margin
 
-gfs = fh # Game font size
+# Even though the nubmer of columns is not used for the actual plotting, it's important here to set the cell size
+cell_width = (fw - 2*h_margin) / (7*columns + 0.5*(columns-1)) # Each month is seven days wide, plus half a day's width between the months
+cell_height = (cell_width * 2) / 2.5 #3.0
+
+gfs = cell_height*25 #fw - h_margin)*1.3 # Game font size
 dfs = 0.5*gfs # Date font size
 mfs = 2*gfs # Month font size
+hfs = min([fw*3, fh*4])# Header font size
+
+header_add = v_margin + hfs/72
+
+spare_height = fh - v_margin*2 - hfs/72 - (cell_height * (rows*6)) # Six weeks to a month, plus 1.5 between each row. It simplifies to r*7 - 1 = 6r + 1.5*(r-1)
+
+month_add = spare_height*0.4
+legend_add = spare_height*0.35 # Yes, these should sum to unity, but that doesn't work for some reason
 
 weekstart = 6 # Week starts on Sunday = 6, Monday = 0
+
+legend_month = 7
+legend_scale = 0.75
+
+hour_format = '24'
+ampm = False
 
 # =============================================================================
 # Read in and format text file
@@ -54,7 +72,12 @@ highlights = open('2025_tickets.txt').readlines()
 for i in range(len(highlights)):
     highlights[i] = highlights[i][:-1]
     
-def reformatMLBSchedule(fn, team, asg, start, highlights=None):
+def reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=None):
+    if ampm == True:
+        ampm_format = ' %p'
+    else:
+        ampm_format = ''
+    
     textschedule = ascii.read(fn)
     schedule2025 = textschedule[start:]
     
@@ -97,7 +120,15 @@ def reformatMLBSchedule(fn, team, asg, start, highlights=None):
         else:
             highlight = False
         
-        asciischedule.add_row([i, gamedatetime.strftime('%d/%m/%Y'), opp, loc, gamedatetime.strftime('%H:%M'), highlight])
+        if str(hour_format) not in ['12', 'I', '%I']:
+            timestring = gamedatetime.strftime('%H:%M')
+        else:
+            if gamedatetime.strftime('%I:%M %p')[0] == '0':
+                timestring = gamedatetime.strftime('%I:%M'+ampm_format)[1:]
+            else:
+                timestring = gamedatetime.strftime('%I:%M'+ampm_format)
+        
+        asciischedule.add_row([i, gamedatetime.strftime('%d/%m/%Y'), opp, loc, timestring, highlight])
     
     return asciischedule
 
@@ -105,7 +136,7 @@ def reformatMLBSchedule(fn, team, asg, start, highlights=None):
 # SET IMPORTANT DATES AND LOAD ABBREVIATIONS
 # =============================================================================
 
-ascii_sched = reformatMLBSchedule('2025RoyalsSchedule.csv', 'Royals', '15/07/2025', start, highlights=highlights)
+ascii_sched = reformatMLBSchedule('2025RoyalsSchedule.csv', 'Royals', '15/07/2025', start, hour_format, ampm, highlights=highlights)
 
 nickname_to_abbreviation_dict = json.load(open('nickname_to_abbreviation_traditional.json'))
 
@@ -128,24 +159,22 @@ ax.set_axis_off()
 #cell_width = 3
 # Set the cell height and width based off the figure size
 
-cell_width = (fw - 2*h_margin) / 22.0
-cell_height = (cell_width * 2) / 2.5 #3.0
-
-spare_height = fh - (cell_height * 13)
-
-header_add = spare_height*0.3
-month_add = spare_height*0.3
-legend_add = spare_height*0.3 # Yes, these should sum to unity, but that doesn't work for some reason
-
 # Header
-#ax.text(month_anchors[6][0]+cell_width*3.5, month_anchors[6][1]+3*cell_height, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
-ax.text(fw*0.5, -v_margin, f'{year} {team} Schedule'.upper(), fontsize=mfs*2, color=otc, horizontalalignment='center', verticalalignment='top', fontweight='bold')
+ax.text(fw*0.5, -v_margin, f'{year} {team} Schedule'.upper(), fontsize=hfs, color=otc, horizontalalignment='center', verticalalignment='top', fontweight='bold')
 
 column = 0
 row = cell_height
 
-#month_anchors = {3: [0, 0], 4: [0, -1*cell_height], 5: [0, -8.5*cell_height], 6: [7.5*cell_width, 0], 7: [7.5*cell_width, -8.5*cell_height], 8: [15*cell_width, 0], 9: [15*cell_width, -8.5*cell_height]}
-month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height], 5: [h_margin, v_margin - header_add - month_add*2 - 6*cell_height], 6: [h_margin+7.5*cell_width, v_margin - header_add - month_add], 7: [h_margin+7.5*cell_width, v_margin - header_add - month_add*2 - 6*cell_height], 8: [h_margin+15*cell_width, v_margin - header_add - month_add], 9: [h_margin+15*cell_width, v_margin - header_add - month_add*2 - 6*cell_height]}
+# Define the anchor points for each month
+#month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height], 5: [h_margin, v_margin - header_add - month_add*2 - 6*cell_height], 6: [h_margin+7.5*cell_width, v_margin - header_add - month_add], 7: [h_margin+7.5*cell_width, v_margin - header_add - month_add*2 - 6*cell_height], 8: [h_margin+15*cell_width, v_margin - header_add - month_add], 9: [h_margin+15*cell_width, v_margin - header_add - month_add*2 - 6*cell_height]}
+month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height]} # This will always be true
+for month_number in range(5, 10):
+    monthcol = (month_number - 4)//rows
+    monthrow = (month_number - 4)%rows
+    # Note that the number of columns is actually not used here.
+    # This allows an arbitrary number of months, though it's unlikely to ever not be six.
+    # It will run down a column until it hits the maximum number of rows, or runs out of months
+    month_anchors[month_number] = [h_margin + (7.5*cell_width)*monthcol, v_margin - header_add - month_add*(1 + monthrow) - (6*cell_height)*monthrow]
 
 current_month = 3
 # Month and week headers
@@ -231,17 +260,18 @@ for entry in ascii_sched.iterrows():
 # Legend boxes
 # home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-7*cell_height]
 # away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-7*cell_height]
-home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-5*cell_height - legend_add*0.5]
-away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-5*cell_height - legend_add*0.5]
 
-ax.fill((home_legend_loc[0]-cell_width/2.0, home_legend_loc[0]-cell_width/2.0, home_legend_loc[0]+cell_width/2.0, home_legend_loc[0]+cell_width/2.0, home_legend_loc[0]-cell_width/2.0), (home_legend_loc[1]-cell_height/2.0, home_legend_loc[1]+cell_height/2.0, home_legend_loc[1]+cell_height/2.0, home_legend_loc[1]-cell_height/2.0, home_legend_loc[1]-cell_height/2.0), hfc)
-ax.text(home_legend_loc[0]+0.75*cell_width, home_legend_loc[1], 'HOME', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
+home_legend_loc = [fw/2.0-1.5*cell_width*legend_scale, month_anchors[legend_month][1]-5*cell_height - legend_add*0.5]
+away_legend_loc = [fw/2.0+1.5*cell_width*legend_scale, month_anchors[legend_month][1]-5*cell_height - legend_add*0.5]
 
-ax.fill((away_legend_loc[0]-cell_width/2.0, away_legend_loc[0]-cell_width/2.0, away_legend_loc[0]+cell_width/2.0, away_legend_loc[0]+cell_width/2.0, away_legend_loc[0]-cell_width/2.0), (away_legend_loc[1]-cell_height/2.0, away_legend_loc[1]+cell_height/2.0, away_legend_loc[1]+cell_height/2.0, away_legend_loc[1]-cell_height/2.0, away_legend_loc[1]-cell_height/2.0), afc)
-ax.text(away_legend_loc[0]+0.75*cell_width, away_legend_loc[1], 'AWAY', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
+ax.fill((home_legend_loc[0]-cell_width*legend_scale/2.0, home_legend_loc[0]-cell_width*legend_scale/2.0, home_legend_loc[0]+cell_width*legend_scale/2.0, home_legend_loc[0]+cell_width*legend_scale/2.0, home_legend_loc[0]-cell_width*legend_scale/2.0), (home_legend_loc[1]-cell_height*legend_scale/2.0, home_legend_loc[1]+cell_height*legend_scale/2.0, home_legend_loc[1]+cell_height*legend_scale/2.0, home_legend_loc[1]-cell_height*legend_scale/2.0, home_legend_loc[1]-cell_height*legend_scale/2.0), hfc)
+ax.text(home_legend_loc[0]+0.75*cell_width*legend_scale, home_legend_loc[1], 'HOME', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
+
+ax.fill((away_legend_loc[0]-cell_width*legend_scale/2.0, away_legend_loc[0]-cell_width*legend_scale/2.0, away_legend_loc[0]+cell_width*legend_scale/2.0, away_legend_loc[0]+cell_width*legend_scale/2.0, away_legend_loc[0]-cell_width*legend_scale/2.0), (away_legend_loc[1]-cell_height*legend_scale/2.0, away_legend_loc[1]+cell_height*legend_scale/2.0, away_legend_loc[1]+cell_height*legend_scale/2.0, away_legend_loc[1]-cell_height*legend_scale/2.0, away_legend_loc[1]-cell_height*legend_scale/2.0), afc)
+ax.text(away_legend_loc[0]+0.75*cell_width*legend_scale, away_legend_loc[1], 'AWAY', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
 
 # Time Zone Note
 # ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-8*cell_height, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='center')
-ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-5*cell_height - legend_add, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='bottom')
+ax.text(fw/2.0, month_anchors[legend_month][1]-5*cell_height - legend_add, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='bottom')
 
 fig.savefig(f'{year}_{team}_Schedule.pdf', bbox_inches='tight', pad_inches=0.1)
