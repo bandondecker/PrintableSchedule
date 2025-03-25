@@ -8,6 +8,11 @@ import matplotlib.pyplot as plt
 # USER VARIABLES
 # =============================================================================
 
+# Things that can feasibly be changed
+fn = '2025RoyalsSchedule.csv'
+start = 33
+asg = '15/07/2025'
+
 year = '2025'
 team = 'Royals'
 
@@ -26,9 +31,20 @@ asg_location = 'Atlanta'
 
 tbc = 'xkcd:goldenrod' # Ticket Box Colour
 
-# Scaling parameters
+weekstart = 6 # Week starts on Sunday = 6, Monday = 0
+
+legend_month = 7
+legend_scale = 0.75
+
+hour_format = '12'
+ampm = False
+
+highlight_file = ''#'2025_tickets.txt'
+
 rows = 3
 columns = 2
+
+# Scaling parameters & things that should not be changed once everything looks good
 
 fh = 11 # Ideal figure height
 fw = 8.5 # Ideal figure width
@@ -53,24 +69,21 @@ spare_height = fh - v_margin*2 - hfs/72 - (cell_height * (rows*6)) # Six weeks t
 month_add = spare_height*0.4
 legend_add = spare_height*0.35 # Yes, these should sum to unity, but that doesn't work for some reason
 
-weekstart = 6 # Week starts on Sunday = 6, Monday = 0
-
-legend_month = 7
-legend_scale = 0.75
-
-hour_format = '24'
-ampm = False
 
 # =============================================================================
 # Read in and format text file
 # =============================================================================
-fn = '2025RoyalsSchedule.csv'
-start = 33
-asg = '15/07/2025'
 
-highlights = open('2025_tickets.txt').readlines()
-for i in range(len(highlights)):
-    highlights[i] = highlights[i][:-1]
+if type(highlight_file) == str and highlight_file != '':
+    try:
+        highlights = open(highlight_file).readlines()
+        for i in range(len(highlights)):
+            highlights[i] = highlights[i][:-1]
+    except OSError:
+        highlights = None
+        print('Highlight file not found, ignoring.')
+else:
+    highlights = None
     
 def reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=None):
     if ampm == True:
