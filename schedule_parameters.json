@@ -1,0 +1,36 @@
+{
+    "start" : 33,
+
+    "year" : "2025",
+    "team" : "Royals",
+
+    "hfc" : "xkcd:royal blue",
+    "htc" : "xkcd:white",
+
+    "afc" : "xkcd:sky blue",
+    "atc" : "xkcd:white",
+
+    "ofc" : "xkcd:light grey",
+    "otc" : "xkcd:navy blue",
+
+    "asg" : "15/07/2025",
+    "asg_fill" : "xkcd:scarlet",
+    "asg_font" : "xkcd:navy blue",
+    "asg_location" : "Atlanta",
+
+    "tbc" : "xkcd:goldenrod",
+    "highlight_file" : "2025_tickets.txt",
+
+    "weekstart" : 6,
+
+    "legend_month" : 7,
+    "legend_scale" : 0.75,
+    
+    "tfhour" : 0,
+    "ampm" : 0,
+
+    "fh" : 11,
+    "fw" : 8.5,
+    "rows" : 3,
+    "columns" : 2
+}

@@ -1,3 +1,4 @@
+import argparse
 from astropy.io import ascii
 from astropy.table import Table, Column, Row
 import datetime
@@ -8,67 +9,147 @@ import matplotlib.pyplot as plt
 # USER VARIABLES
 # =============================================================================
 
-# Things that can feasibly be changed
-fn = '2025RoyalsSchedule.csv'
-start = 33
-asg = '15/07/2025'
+parser = argparse.ArgumentParser(description='Parse user inputs, sometimes overwriting defaults')
 
-year = '2025'
-team = 'Royals'
+# Schedule File, Colours, and size parameters
 
-hfc = 'xkcd:royal blue' # Home Fill Colour
-htc = 'xkcd:white' # Home Text Colour
+parser.add_argument('--fn', type=str, help='Schedule file. Currently must be a .csv with the MLB formatting', required=True)
+parser.add_argument('--config_file', type=str, help='JSON file with variables')
 
-afc = 'xkcd:sky blue' # Away Fill Colour
-atc = 'xkcd:white' # Away Text Colour
+parser.add_argument('--start', type=int, help='Line of the schedule to start the regular season. Default is 33, from the current MLB test schedules.', default=33)
 
-ofc = 'xkcd:light grey' # Off Day Fill Colour
-otc = 'xkcd:navy blue' # Off Day Text Colour
+parser.add_argument('--year', type=str, help='')
+parser.add_argument('--team', type=str, help='')
 
-asg_fill = 'xkcd:scarlet' # ASG font colour
-asg_font = 'xkcd:navy blue' # ASG fill colour
-asg_location = 'Atlanta'
+parser.add_argument('--hfc', type=str, help='Home Fill Colour') # 
+parser.add_argument('--htc', type=str, help='Home Text Colour') # 
 
-tbc = 'xkcd:goldenrod' # Ticket Box Colour
+parser.add_argument('--afc', type=str, help='Away Fill Colour') # 
+parser.add_argument('--atc', type=str, help='Away Text Colour') # 
 
-weekstart = 6 # Week starts on Sunday = 6, Monday = 0
+parser.add_argument('--ofc', type=str, help='Off Day Fill Colour') # 
+parser.add_argument('--otc', type=str, help='Off Day Text Colour')
 
-legend_month = 7
-legend_scale = 0.75
+parser.add_argument('--head_colour', type=str, help='Header Text Colour')
 
-hour_format = '12'
-ampm = False
+parser.add_argument('--asg', type=str, help='All-Star Game date in mm/dd/yyyy format')
+parser.add_argument('--asg_fill', type=str, help='ASG font colour') # 
+parser.add_argument('--asg_font', type=str, help='ASG fill colour') # 
+parser.add_argument('--asg_location', type=str, help='')
 
-highlight_file = ''#'2025_tickets.txt'
+parser.add_argument('--tbc', type=str, help='Ticket Box Colour') # 
+parser.add_argument('--highlight_file', type=str, help='')
 
-rows = 3
-columns = 2
+parser.add_argument('--weekstart', type=int, help='Week starts on Sunday = 6, Monday = 0') # 
 
-# Scaling parameters & things that should not be changed once everything looks good
+parser.add_argument('--legend_month', type=int, help='IE, the legend goes under this month') # 
+parser.add_argument('--legend_scale', type=float, help='Scale of the legend relative to calendar cells') # 
 
-fh = 11 # Ideal figure height
-fw = 8.5 # Ideal figure width
-rescale = 1.25 # Rescale you have to do becasue python won't do the figure size as-defined for annoying reasons
+parser.add_argument('--hour_format', type=str, help='Hour format for the start times. String inputs of "12" or "I" will set 12-hour time format, anything else will be 24-hour') # 
+parser.add_argument('--ampm', type=bool, help='Include AM/PM in the game start times. Default is False.')
 
-v_margin = 0.1 # Vertical Margin
-h_margin = 0.1 # Horizontal Margin
+parser.add_argument('--rows', type=int, help='')
+parser.add_argument('--columns', type=int, help='')
 
-# Even though the nubmer of columns is not used for the actual plotting, it's important here to set the cell size
-cell_width = (fw - 2*h_margin) / (7*columns + 0.5*(columns-1)) # Each month is seven days wide, plus half a day's width between the months
-cell_height = (cell_width * 2) / 2.5 #3.0
+parser.add_argument('--fh', type=float, help='Ideal figure height (any unit, see \'unit_scale\')') # 
+parser.add_argument('--fw', type=float, help='Ideal figure width (any unit, see \'unit_scale\')') # 
+parser.add_argument('--unit_scale', type=float, help='Scale the figure size to be a given unit, 1.25 for inches or 0.49 for cm. (Python takes inches, but empirically not true inches!)')
 
-gfs = cell_height*25 #fw - h_margin)*1.3 # Game font size
-dfs = 0.5*gfs # Date font size
-mfs = 2*gfs # Month font size
-hfs = min([fw*3, fh*4])# Header font size
+parser.add_argument('--v_margin', type=float, help='Vertical margin')
+parser.add_argument('--h_margin', type=float, help='Horizontal margin')
 
-header_add = v_margin + hfs/72
+parser.add_argument('--cell_width', type=float, help='The width of the date cells. The default behaviour is to set it by the desired schedule width and number of month columns, for two columns & 8.5 inches, it works out to ~0.572')
+parser.add_argument('--cell_height', type=float, help='The height of the date cells. The default behaviour is to use a 4/5 ratio with the cell width. It works out to ~0.458 in the default settings')
+
+parser.add_argument('--gfs', type=float, help='Game font size')
+parser.add_argument('--dfs', type=float, help='Date font size')
+parser.add_argument('--mfs', type=float, help='Month font size')
+
+parser.add_argument('--hfs', type=float, help='Header font size')
+
+parser.add_argument('--header_add', type=float, help='Added space above the calendar section for the cells')
+
+parser.add_argument('--month_add', type=float, help='Added space between the month rows')
+parser.add_argument('--legend_add', type=float, help='Added space for the legend')
+
+parser.add_argument('--frame_on', type=float, help='Show the frame of the desired figure size, with units. This is helpful for fine-tuning sizes.')
+parser.add_argument('--abbvs', type=str, help='JSON file with the three letter abbreviations for the nicknames in the MLB schedule.')
+
+# Parse arguments
+args = parser.parse_args()
+
+config = {}
+if args.config_file:
+    try:
+        with open(args.config_file, "r") as f:
+            config = json.load(f)
+    except Exception as e:
+        print(f"Error reading JSON file: {e}")
+
+# Resolve command line versus JSON
+fn = args.fn # This is required in the command line
+start = args.start if args.start is not None else config.get('start', 33)
+
+year = args.year if args.year is not None else config.get('year', '2025')
+team = args.team if args.team is not None else config.get('team', 'Royals')
+
+hfc = args.hfc if args.hfc is not None else config.get('hfc', 'xkcd:royal blue') # Home Fill Colour
+htc = args.htc if args.htc is not None else config.get('htc', 'xkcd:white') # Home Text Colour
+
+afc = args.afc if args.afc is not None else config.get('afc', 'xkcd:sky blue') # Away Fill Colour
+atc = args.atc if args.atc is not None else config.get('atc', 'xkcd:white') # Away Text Colour
+
+ofc = args.ofc if args.ofc is not None else config.get('ofc', 'xkcd:light grey') # Off Day Fill Colour
+otc = args.otc if args.otc is not None else config.get('otc', 'xkcd:navy blue') # Off Day Text Colour
+
+head_colour = args.head_colour if args.head_colour is not None else config.get('head_colour', 'xkcd:navy blue') # Off Day Text Colour
+
+asg = args.asg if args.asg is not None else config.get('asg', '15/07/2025')
+asg_fill = args.asg_fill if args.asg_fill is not None else config.get('asg_fill', 'xkcd:scarlet') # ASG font colour
+asg_font = args.asg_font if args.asg_font is not None else config.get('asg_font', 'xkcd:navy blue') # ASG fill colour
+asg_location = args.asg_location if args.asg_location is not None else config.get('asg_location', 'Atlanta')
+
+tbc = args.tbc if args.tbc is not None else config.get('tbc', 'xkcd:goldenrod') # Ticket Box Colour
+highlight_file = args.highlight_file if args.highlight_file is not None else config.get('highlight_file')#, '2025_tickets.txt')
+
+weekstart = args.weekstart if args.weekstart is not None else config.get('weekstart', 6) # Week starts on Sunday = 6, Monday = 0
+
+legend_month = args.legend_month if args.legend_month is not None else config.get('legend_month', 7) # IE, the legend goes under this month
+legend_scale = args.legend_scale if args.legend_scale is not None else config.get('legend_scale', 0.75) # Scale of the legend relative to calendar cells
+
+hour_format = args.hour_format if args.hour_format is not None else config.get('hour_format', '24') # '12' or '24' Defaults to '24' if neither of these.
+ampm = args.ampm if args.ampm is not None else config.get('ampm', False)
+
+fh = args.fh if args.fh is not None else config.get('fh', 11.0) # Ideal figure height
+fw = args.fw if args.fw is not None else config.get('fw', 8.5) # Ideal figure width
+rows = args.rows if args.rows is not None else config.get('rows', 3)
+columns = args.columns if args.columns is not None else config.get('columns', 2)
+
+unit_scale = args.unit_scale if args.unit_scale is not None else config.get('unit_scale', 1.25)
+
+v_margin = args.v_margin if args.v_margin is not None else config.get('v_margin', 0.1)
+h_margin = args.h_margin if args.h_margin is not None else config.get('h_margin', 0.1)
+
+# Fine-tuning parameters to make it actually look good
+
+cell_width = args.cell_width if args.cell_width is not None else config.get('cell_width', (fw - 2*h_margin) / (7*columns + 0.5*(columns-1))) # Each month is seven days wide, plus half a day's width between the months
+cell_height = args.cell_height if args.cell_height is not None else config.get('cell_height', (cell_width * 2) / 2.5)
+
+gfs = args.gfs if args.gfs is not None else config.get('gfs', cell_height*25) # Game font size
+dfs = args.dfs if args.dfs is not None else config.get('dfs', 0.5*gfs) # Date font size
+mfs = args.mfs if args.mfs is not None else config.get('mfs', 2*gfs) # Month font size
+
+hfs = args.hfs if args.hfs is not None else config.get('hfs', min([fw*3, fh*4])) # Header font size
+
+header_add = args.header_add if args.header_add is not None else config.get('header_add', v_margin + hfs/72)
 
 spare_height = fh - v_margin*2 - hfs/72 - (cell_height * (rows*6)) # Six weeks to a month, plus 1.5 between each row. It simplifies to r*7 - 1 = 6r + 1.5*(r-1)
 
-month_add = spare_height*0.4
-legend_add = spare_height*0.35 # Yes, these should sum to unity, but that doesn't work for some reason
+month_add = args.month_add if args.month_add is not None else config.get('month_add', spare_height*0.4)
+legend_add = args.legend_add if args.legend_add is not None else config.get('legend_add', spare_height*0.35) # Yes, these should sum to unity, but that doesn't work for some reason
 
+frame_on = args.frame_on if args.frame_on is not None else config.get('frame_on', False)
+abbvs = args.abbvs if args.abbvs is not None else config.get('abbvs', 'nickname_to_abbreviation_traditional.json')
 
 # =============================================================================
 # Read in and format text file
@@ -85,7 +166,7 @@ if type(highlight_file) == str and highlight_file != '':
 else:
     highlights = None
     
-def reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=None):
+def _reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=None):
     if ampm == True:
         ampm_format = ' %p'
     else:
@@ -149,9 +230,9 @@ def reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=None
 # SET IMPORTANT DATES AND LOAD ABBREVIATIONS
 # =============================================================================
 
-ascii_sched = reformatMLBSchedule('2025RoyalsSchedule.csv', 'Royals', '15/07/2025', start, hour_format, ampm, highlights=highlights)
+ascii_sched = _reformatMLBSchedule(fn, team, asg, start, hour_format, ampm, highlights=highlights)
 
-nickname_to_abbreviation_dict = json.load(open('nickname_to_abbreviation_traditional.json'))
+nickname_to_abbreviation_dict = json.load(open(abbvs))
 
 # =============================================================================
 # Make Calendar Schedule
@@ -161,19 +242,20 @@ weekdays = {0:'Monday', 1:'Tuesday', 2:'Wednesday', 3:'Thursday', 4:'Friday', 5:
 
 
 fig = plt.figure()
-fig.set_size_inches(h=fh*rescale, w=fw*rescale)
+fig.set_size_inches(h=fh*unit_scale, w=fw*unit_scale)
 ax = fig.add_subplot(111)
 ax.set_xlim(0, fw)
 ax.set_ylim(-fh, 0)
 ax.set_aspect('equal')
-ax.set_axis_off()
+if not frame_on:
+    ax.set_axis_off()
 
 #cell_height = 2
 #cell_width = 3
 # Set the cell height and width based off the figure size
 
 # Header
-ax.text(fw*0.5, -v_margin, f'{year} {team} Schedule'.upper(), fontsize=hfs, color=otc, horizontalalignment='center', verticalalignment='top', fontweight='bold')
+ax.text(fw*0.5, -v_margin, f'{year} {team} Schedule'.upper(), fontsize=hfs, color=head_colour, horizontalalignment='center', verticalalignment='top', fontweight='bold')
 
 column = 0
 row = cell_height
@@ -192,7 +274,7 @@ for month_number in range(5, 10):
 current_month = 3
 # Month and week headers
 for month_ordinal in months.keys():
-    ax.text(month_anchors[month_ordinal][0]+cell_width*3.5, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=otc, horizontalalignment='center', verticalalignment='center', fontweight='bold')
+    ax.text(month_anchors[month_ordinal][0]+cell_width*3.5, month_anchors[month_ordinal][1]+1*cell_height, months[month_ordinal].upper(), fontsize=mfs, color=head_colour, horizontalalignment='center', verticalalignment='center', fontweight='bold')
     for day in weekdays.keys():
         ax.text(month_anchors[month_ordinal][0] + (day - weekstart)%7*cell_width + 0.5*cell_width, month_anchors[month_ordinal][1]+0.25*cell_height, weekdays[day].upper(), color=otc, fontsize=dfs, horizontalalignment='center', verticalalignment='center')
 
