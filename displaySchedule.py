@@ -1,6 +1,6 @@
 import argparse
 from astropy.io import ascii
-from astropy.table import Table, Column, Row
+from astropy.table import Table
 import datetime
 import json
 import matplotlib.pyplot as plt 
