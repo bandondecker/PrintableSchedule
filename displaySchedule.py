@@ -70,7 +70,27 @@ parser.add_argument('--hfs', type=float, help='Header font size')
 parser.add_argument('--header_add', type=float, help='Added space above the calendar section for the cells')
 
 parser.add_argument('--month_add', type=float, help='Added space between the month rows')
+
+parser.add_argument('--m4x', type=float, help='Move March/April left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m4y', type=float, help='Move March/April up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
+parser.add_argument('--m5x', type=float, help='Move May left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m5y', type=float, help='Move May up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
+parser.add_argument('--m6x', type=float, help='Move June left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m6y', type=float, help='Move June up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
+parser.add_argument('--m7x', type=float, help='Move July left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m7y', type=float, help='Move July up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
+parser.add_argument('--m8x', type=float, help='Move August left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m8y', type=float, help='Move August up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
+parser.add_argument('--m9x', type=float, help='Move September left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
+parser.add_argument('--m9y', type=float, help='Move September up or down, in units of cell height. The default of zero corresponds to the location set by the above parameters.')
+
 parser.add_argument('--legend_add', type=float, help='Added space for the legend')
+parser.add_argument('--legend_x_shift', type=float, help='Move legend left or right, in units of cell width. The default of zero corresponds to the location set by the above parameters.')
 
 parser.add_argument('--frame_on', type=float, help='Show the frame of the desired figure size, with units. This is helpful for fine-tuning sizes.')
 parser.add_argument('--abbvs', type=str, help='JSON file with the three letter abbreviations for the nicknames in the MLB schedule.')
@@ -146,10 +166,30 @@ header_add = args.header_add if args.header_add is not None else config.get('hea
 spare_height = fh - v_margin*2 - hfs/72 - (cell_height * (rows*6)) # Six weeks to a month, plus 1.5 between each row. It simplifies to r*7 - 1 = 6r + 1.5*(r-1)
 
 month_add = args.month_add if args.month_add is not None else config.get('month_add', spare_height*0.4)
-legend_add = args.legend_add if args.legend_add is not None else config.get('legend_add', spare_height*0.35) # Yes, these should sum to unity, but that doesn't work for some reason
 
 frame_on = args.frame_on if args.frame_on is not None else config.get('frame_on', False)
 abbvs = args.abbvs if args.abbvs is not None else config.get('abbvs', 'nickname_to_abbreviation_traditional.json')
+
+m4x = args.m4x if args.m4x is not None else config.get('m4x', 0)
+m4y = args.m4y if args.m4y is not None else config.get('m4y', 0)
+
+m5x = args.m5x if args.m5x is not None else config.get('m5x', 0)
+m5y = args.m5y if args.m5y is not None else config.get('m5y', 0)
+
+m6x = args.m6x if args.m6x is not None else config.get('m6x', 0)
+m6y = args.m6y if args.m6y is not None else config.get('m6y', 0)
+
+m7x = args.m7x if args.m7x is not None else config.get('m7x', 0)
+m7y = args.m7y if args.m7y is not None else config.get('m7y', 0)
+
+m8x = args.m8x if args.m8x is not None else config.get('m8x', 0)
+m8y = args.m8y if args.m8y is not None else config.get('m8y', 0)
+
+m9x = args.m9x if args.m9x is not None else config.get('m9x', 0)
+m9y = args.m9y if args.m9y is not None else config.get('m9y', 0)
+
+legend_add = args.legend_add if args.legend_add is not None else config.get('legend_add', 0)
+legend_x_shift = args.legend_x_shift if args.legend_x_shift is not None else config.get('legend_x_shift', 0)
 
 # =============================================================================
 # Read in and format text file
@@ -261,15 +301,16 @@ column = 0
 row = cell_height
 
 # Define the anchor points for each month
-#month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height], 5: [h_margin, v_margin - header_add - month_add*2 - 6*cell_height], 6: [h_margin+7.5*cell_width, v_margin - header_add - month_add], 7: [h_margin+7.5*cell_width, v_margin - header_add - month_add*2 - 6*cell_height], 8: [h_margin+15*cell_width, v_margin - header_add - month_add], 9: [h_margin+15*cell_width, v_margin - header_add - month_add*2 - 6*cell_height]}
-month_anchors = {3: [h_margin, v_margin - header_add - month_add], 4: [h_margin, v_margin - header_add - month_add - 1*cell_height]} # This will always be true
+month_anchors = {3: [h_margin + m4x*cell_width, v_margin - header_add - month_add + m4y*cell_height], 4: [h_margin+m4x*cell_width, v_margin - header_add - month_add - 1*cell_height + m4y*cell_height]} # This will always be true
+month_shifts_x = {5: m5x*cell_width, 6: m6x*cell_width, 7: m7x*cell_width, 8: m8x*cell_width, 9: m9x*cell_width}
+month_shifts_y = {5: m5y*cell_height, 6: m6y*cell_height, 7: m7y*cell_height, 8: m8y*cell_height, 9: m9y*cell_height}
 for month_number in range(5, 10):
     monthcol = (month_number - 4)//rows
     monthrow = (month_number - 4)%rows
     # Note that the number of columns is actually not used here.
     # This allows an arbitrary number of months, though it's unlikely to ever not be six.
     # It will run down a column until it hits the maximum number of rows, or runs out of months
-    month_anchors[month_number] = [h_margin + (7.5*cell_width)*monthcol, v_margin - header_add - month_add*(1 + monthrow) - (6*cell_height)*monthrow]
+    month_anchors[month_number] = [h_margin + (7.5*cell_width)*monthcol + month_shifts_x[month_number], v_margin - header_add - month_add*(1 + monthrow) - (6*cell_height)*monthrow + month_shifts_y[month_number]]
 
 current_month = 3
 # Month and week headers
@@ -356,8 +397,8 @@ for entry in ascii_sched.iterrows():
 # home_legend_loc = [month_anchors[7][0]+2*cell_width, month_anchors[7][1]-7*cell_height]
 # away_legend_loc = [month_anchors[7][0]+5*cell_width, month_anchors[7][1]-7*cell_height]
 
-home_legend_loc = [fw/2.0-1.5*cell_width*legend_scale, month_anchors[legend_month][1]-5*cell_height - legend_add*0.5]
-away_legend_loc = [fw/2.0+1.5*cell_width*legend_scale, month_anchors[legend_month][1]-5*cell_height - legend_add*0.5]
+home_legend_loc = [fw/2.0-1.5*cell_width*legend_scale + legend_x_shift*cell_width, month_anchors[legend_month][1]-5.85*cell_height + legend_add*cell_height]
+away_legend_loc = [fw/2.0+1.5*cell_width*legend_scale + legend_x_shift*cell_width, month_anchors[legend_month][1]-5.85*cell_height + legend_add*cell_height]
 
 ax.fill((home_legend_loc[0]-cell_width*legend_scale/2.0, home_legend_loc[0]-cell_width*legend_scale/2.0, home_legend_loc[0]+cell_width*legend_scale/2.0, home_legend_loc[0]+cell_width*legend_scale/2.0, home_legend_loc[0]-cell_width*legend_scale/2.0), (home_legend_loc[1]-cell_height*legend_scale/2.0, home_legend_loc[1]+cell_height*legend_scale/2.0, home_legend_loc[1]+cell_height*legend_scale/2.0, home_legend_loc[1]-cell_height*legend_scale/2.0, home_legend_loc[1]-cell_height*legend_scale/2.0), hfc)
 ax.text(home_legend_loc[0]+0.75*cell_width*legend_scale, home_legend_loc[1], 'HOME', color=otc, fontsize=gfs, fontweight='bold', verticalalignment='center')
@@ -367,6 +408,6 @@ ax.text(away_legend_loc[0]+0.75*cell_width*legend_scale, away_legend_loc[1], 'AW
 
 # Time Zone Note
 # ax.text(month_anchors[7][0]+3.5*cell_width, month_anchors[7][1]-8*cell_height, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='center')
-ax.text(fw/2.0, month_anchors[legend_month][1]-5*cell_height - legend_add, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='bottom')
+ax.text(fw/2.0 + legend_x_shift*cell_width, month_anchors[legend_month][1]-6.7*cell_height + legend_add*cell_height, 'All times CDT', fontsize=dfs, horizontalalignment='center', verticalalignment='bottom')
 
 fig.savefig(f'{year}_{team}_Schedule.pdf', bbox_inches='tight', pad_inches=0.1)
