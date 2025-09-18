@@ -13,13 +13,13 @@ parser = argparse.ArgumentParser(description='Parse user inputs, sometimes overw
 
 # Schedule File, Colours, and size parameters
 
-parser.add_argument('--fn', type=str, help='Schedule file. Currently must be a .csv with the MLB formatting', required=True)
+parser.add_argument('--year', type=str, help='', required=True)
+parser.add_argument('--team', type=str, help='', required=True)
+
+parser.add_argument('--fn', type=str, help='Schedule file. Currently must be a .csv with the MLB formatting', required=False)
 parser.add_argument('--config_file', type=str, help='JSON file with variables')
 
-parser.add_argument('--start', type=int, help='Line of the schedule to start the regular season. Default is 33, from the current MLB test schedules.', default=33)
-
-parser.add_argument('--year', type=str, help='')
-parser.add_argument('--team', type=str, help='')
+parser.add_argument('--start', type=int, help='Line of the schedule to start the regular season. Default is 33, from the current MLB test schedules.') # default=33)
 
 parser.add_argument('--hfc', type=str, help='Home Fill Colour') # 
 parser.add_argument('--htc', type=str, help='Home Text Colour') # 
@@ -107,11 +107,16 @@ if args.config_file:
         print(f"Error reading JSON file: {e}")
 
 # Resolve command line versus JSON
-fn = args.fn # This is required in the command line
-start = args.start if args.start is not None else config.get('start', 33)
+year = args.year # if args.year is not None else config.get('year', '') # Making these required
+team = args.team # if args.team is not None else config.get('team', '')
 
-year = args.year if args.year is not None else config.get('year', '2025')
-team = args.team if args.team is not None else config.get('team', 'Royals')
+fn = args.fn if args.fn is not None else config.get('fn', f'{year}{team}Schedule.csv')
+start = args.start if args.start is not None else config.get('start', 0)
+
+asg = args.asg if args.asg is not None else config.get('asg', '01/01/2001')
+asg_fill = args.asg_fill if args.asg_fill is not None else config.get('asg_fill', '') # ASG font colour
+asg_font = args.asg_font if args.asg_font is not None else config.get('asg_font', '') # ASG fill colour
+asg_location = args.asg_location if args.asg_location is not None else config.get('asg_location', '')
 
 hfc = args.hfc if args.hfc is not None else config.get('hfc', 'xkcd:royal blue') # Home Fill Colour
 htc = args.htc if args.htc is not None else config.get('htc', 'xkcd:white') # Home Text Colour
@@ -124,15 +129,10 @@ otc = args.otc if args.otc is not None else config.get('otc', 'xkcd:navy blue') 
 
 head_colour = args.head_colour if args.head_colour is not None else config.get('head_colour', 'xkcd:navy blue') # Off Day Text Colour
 
-asg = args.asg if args.asg is not None else config.get('asg', '15/07/2025')
-asg_fill = args.asg_fill if args.asg_fill is not None else config.get('asg_fill', 'xkcd:scarlet') # ASG font colour
-asg_font = args.asg_font if args.asg_font is not None else config.get('asg_font', 'xkcd:navy blue') # ASG fill colour
-asg_location = args.asg_location if args.asg_location is not None else config.get('asg_location', 'Atlanta')
-
 tbc = args.tbc if args.tbc is not None else config.get('tbc', 'xkcd:goldenrod') # Ticket Box Colour
 highlight_file = args.highlight_file if args.highlight_file is not None else config.get('highlight_file')#, '2025_tickets.txt')
 
-weekstart = args.weekstart if args.weekstart is not None else config.get('weekstart', 6) # Week starts on Sunday = 6, Monday = 0
+weekstart = args.weekstart if args.weekstart is not None else config.get('weekstart', 0) # Week starts on Sunday = 6, Monday = 0
 
 legend_month = args.legend_month if args.legend_month is not None else config.get('legend_month', 7) # IE, the legend goes under this month
 legend_scale = args.legend_scale if args.legend_scale is not None else config.get('legend_scale', 0.75) # Scale of the legend relative to calendar cells

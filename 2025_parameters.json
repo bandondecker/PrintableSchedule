@@ -3,5 +3,7 @@
  "asg": "15/07/2025",
  "asg_fill": "xkcd:scarlet",
  "asg_font": "xkcd:navy blue",
- "asg_location": "Atlanta"
+ "head_colour": "xkcd:royal blue",
+ "m6y": 1.0,
+ "m9y": 1.0
 }
