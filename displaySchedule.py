@@ -132,6 +132,8 @@ head_colour = args.head_colour if args.head_colour is not None else config.get('
 tbc = args.tbc if args.tbc is not None else config.get('tbc', 'xkcd:goldenrod') # Ticket Box Colour
 highlight_file = args.highlight_file if args.highlight_file is not None else config.get('highlight_file')#, '2025_tickets.txt')
 
+abbvs = args.abbvs if args.abbvs is not None else config.get('abbvs', 'nickname_to_abbreviation_traditional.json')
+
 weekstart = args.weekstart if args.weekstart is not None else config.get('weekstart', 0) # Week starts on Sunday = 6, Monday = 0
 
 legend_month = args.legend_month if args.legend_month is not None else config.get('legend_month', 7) # IE, the legend goes under this month
@@ -168,7 +170,6 @@ spare_height = fh - v_margin*2 - hfs/72 - (cell_height * (rows*6)) # Six weeks t
 month_add = args.month_add if args.month_add is not None else config.get('month_add', spare_height*0.4)
 
 frame_on = args.frame_on if args.frame_on is not None else config.get('frame_on', False)
-abbvs = args.abbvs if args.abbvs is not None else config.get('abbvs', 'nickname_to_abbreviation_traditional.json')
 
 m4x = args.m4x if args.m4x is not None else config.get('m4x', 0)
 m4y = args.m4y if args.m4y is not None else config.get('m4y', 0)
